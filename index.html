@@ -109,7 +109,8 @@
 }
 .lang5{
 	color: rgb(237, 237, 237);
-	font-size: 7pt;
+	font-size: 7.5pt;
+
 }
 .lll{
 	right: 0;
@@ -131,8 +132,7 @@ a:hover{
 	width: 100%;
 	background-color: #333;
 	/*transform: translateY(-10px);*/
-	position: relative;
-	top: 0;
+
 	height: 35px;
 	text-transform: uppercase;
 }
@@ -160,7 +160,94 @@ a:hover{
 	height: 95vh!important;
 	width: 100%;
 }
+/*body {
+  background-color: #000;
+}
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*/
+section {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  
+}
+section.ok{
+  background-color: #555;
+}
+
+p{
+  color: white;
+  font-family: arial;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
 
 </style>
 </head>
@@ -176,11 +263,11 @@ a:hover{
 						<span style="color: #333; font-size: 10pt">lorem</span>
 						<a href="#" class="fa fa-map-marker location hidden-xs"> </a>
 						<span style="color: #333; font-size: 2pt;">A</span>
-						<a href="#" class="hidden-xs location1">DIRECTION</a>
+						<a href="https://goo.gl/maps/L3unbmyzrpCVJeTs5" class="hidden-xs location1">DIRECTION</a>
 							<khan class="lll">
 								<span class="langu hidden-xs "> FOLLOW US </span>
 								<span style="color: #333; font-size: 5pt;">lorem</span>
-								<a href="#" class="fa fa-instagram lang1"></a>
+								<a href="https://www.instagram.com/farhod.restaurant/" class="fa fa-instagram lang1"></a>
 								<a href="#" class="fa fa-telegram lang1"></a>
 								<a href="#" class="fa fa-facebook lang1"></a>
 								<span style="color: #333; font-size: 8pt;">lorem</span>
@@ -203,7 +290,7 @@ a:hover{
 						<span style="color: #333; font-size: 7pt">lorem</span>
 						<a href="#" class="fa fa-map-marker phtell visible-xs-inline-block"> </a>
 						<span style="color: #333; font-size: 2pt;">A</span>
-						<a href="#" class="visible-xs-inline-block tel2">DIRECTION</a>
+						<a href="https://goo.gl/maps/L3unbmyzrpCVJeTs5" class="visible-xs-inline-block tel2">DIRECTION</a>
 							<khan class="lll">
 								<a href="#" class="lang5">UZ  </a>
 								<span class="lang5"> | </span>
@@ -215,11 +302,11 @@ a:hover{
 		</div>
 
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  				<ol class="carousel-indicators">
+  				<!-- <ol class="carousel-indicators">
    					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
    					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
- 				 </ol>
+ 				 </ol> -->
   					<div class="carousel-inner">
    						<div class="carousel-item active one">
     						<!--  <img class="d-block w-100" src="img/1146_rsr003_00_p_1024x768.jpg" alt="First slide"> -->
@@ -233,8 +320,22 @@ a:hover{
   					</div>
  			</div>
 
+	<section>
+		
+		<a href="#section2" class="scroll-down" address="true"></a>
+	</section>
+		<section class="ok" id="#section">
+			<p>OK SCROLL !</p>
+		</section>
+
+<div id="section2">
+	<div style="height: 1000px; width: 100px;
+	background-color: red;"></div>
+</div>
+
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>			
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
