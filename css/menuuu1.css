@@ -1,0 +1,94 @@
+
+.ff{
+	min-width:100%;
+	min-height:100%;
+	display:block;
+	position:relative;
+	transform: translateY(-100vh)!important;
+	}
+
+.menu{
+	width:1cm;
+	height:1cm;
+	display:block;
+	position:relative;
+	border-style: none!important;
+	background-color: none!important;
+	color: none!important;
+	border-width: 0px!important;
+	}
+
+.list,.intro{
+	height:95.4vh;
+	top:0;
+	display:flex;
+	position: absolute;
+	align-items:center;
+	flex-flow:column wrap;
+	justify-content:center;
+	z-index:-1;
+	transition:all .75s ease;
+	transform: translateY(0.38vw);
+	transform: translateX(-5vw);
+	}
+
+.list{
+	background:rgb(63, 212, 199);
+	width:51vw;
+	left:-120px;
+	opacity:0
+	}
+
+.list span{
+	background:#333;
+	width:80%;
+	margin:5px 0;
+	padding:10px 0;
+	text-align:center;
+	border-radius:4px;
+	color: lightgray;
+	font-size:14pt;
+	font-family: Montserrat;
+	}
+
+.intro{
+	width:100%;
+	padding:0 8px;
+	left:0;
+	text-align:center
+	}
+
+.btn{
+	background:#333;
+	width:45px;
+	height:45px;
+	top:10px;
+	left:10px;
+	display:block;
+	position:absolute;
+	border-radius:50%;
+	opacity: o.5;
+	color: white;
+	text-align: center;
+
+	}
+
+.btn:before,
+.btn:after{
+	background:lightgray;
+	width:25px;
+	height:3px;
+	left:9px;
+	display:block;
+	position:absolute;
+	content:"";
+	transition:all .75s ease
+	}
+	
+.btn:before{top:16px}
+.btn:after{bottom:16px}
+
+.menu:focus-within .list{left:0;opacity:1}
+.menu:focus-within .intro{width:calc(100% - 120px);left:120px}
+.menu:focus-within .btn:before{transform:rotate(45deg) translate(2px,2px)}
+.menu:focus-within .btn:after{transform:rotate(-45deg) translate(2px,-2px)}
