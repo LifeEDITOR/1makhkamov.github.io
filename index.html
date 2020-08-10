@@ -25,6 +25,10 @@
 	<link rel="stylesheet" type="text/css" href="css/pagination.css" />
 	<script src="js/scroll.js"></script>	
 	<link rel="stylesheet" href="css/menuuu1.css">
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 	<style>
 		.head{
 	width: 100%;
@@ -257,9 +261,13 @@ section.ok{
 		font-size: 5vw;
 		text-align: center;
 		color: #333;
+		
+}
+.animate__animated{
+	transform: translateY(-55vh);
 }
 .name1{
-	transform: translateY(-55vh);
+	transform: translateY(-55vh)!important;
 }
 .navbar1{
 	background: transparent;
@@ -269,17 +277,12 @@ section.ok{
 	height: 2vh;
 	width: 100%;
 	font-family: Montserrat;
-	font-size: 17pt;
-	/*padding-left: 30vw;*/
-
-	
+	font-size: 17pt;	
 }
 .navbar2{
 	transform: translateY(-100vh)!important;
 	opacity: 0.3;
 	background-color: #333;
-
-/*	justify-content: right!important;*/
 	width: 100%;
 	height: 22vw;
 	position: absolute;
@@ -287,8 +290,7 @@ section.ok{
 .hrr{
 	width: 100vw;
 	content: #333;
-	/*transform: translateY(-107vh)!important;*/
-	height: 0.279cm;
+	height: 0.281cm;
 	background: linear-gradient(to top, rgb(45, 73, 133) 30%, rgb(95, 174, 176));
 	opacity: 0.5;
 	position: absolute;
@@ -304,6 +306,34 @@ section.ok{
 .navbar-dark{
 	background: transparent!important;
 	color: #333!important;
+}
+.alert1{
+	background: #333!important;
+	border-radius: 0;
+	border-width: 0;
+	position: fixed;
+	bottom: 0;
+	width: 60%;
+	right: 0;
+	font-size: 1.5vw; 
+}
+.alert2{
+	background: #333!important;
+	border-radius: 0;
+	border-width: 0;
+	position: fixed;
+	bottom: 0;
+	width: 45%;
+	right: 0;
+	font-size: 3vw; 
+}
+.close1{
+	color: white!important;
+	font-size: 2vw!important;
+}
+.close2{
+	color: white!important;
+	font-size: 4vw!important;
 }
 </style>
 </head>
@@ -321,7 +351,7 @@ section.ok{
 						<span style="color: #333; font-size: 2pt;">A</span>
 						<a href="https://goo.gl/maps/L3unbmyzrpCVJeTs5" class="hidden-xs location1">DIRECTION</a>
 							<khan class="lll">
-								<span class="langu hidden-xs "> FOLLOW US </span>
+								<span class="langu hidden-xs"> FOLLOW US </span>
 								<span style="color: #333; font-size: 5pt;">lorem</span>
 								<a href="https://www.instagram.com/farhod.restaurant/" class="fa fa-instagram lang1"></a>
 								<a href="#" class="fa fa-telegram lang1"></a>
@@ -358,79 +388,40 @@ section.ok{
 		</div>
 
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  				<!-- <ol class="carousel-indicators">
-   					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-   					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
- 				 </ol> -->
   					<div class="carousel-inner">
    						<div class="carousel-item active one">
-    						<!--  <img class="d-block w-100" src="img/1146_rsr003_00_p_1024x768.jpg" alt="First slide"> -->
    						</div>
     					<div class="carousel-item two">
-     						<!-- <img class="d-block w-100" src="img/1146_rsr003_00_p_1024x768.jpg" alt="Second slide"> -->
     					</div>
     					<div class="carousel-item three">
-    						<!--   <img class="d-block w-100" src="img/1146_rsr003_00_p_1024x768.jpg" alt="Third slide"> -->
     					</div>
   					</div>
  			</div>
-
 	<section>
-		
 		<a href="#section2" class="scroll-down" address="true"></a>
 	</section>
-
-	<div class="namee name1">
-		<span class="name1"> FARHOD </span><br><span class="name1"> RESTAURANT </span>
+<div class="name1">
+	<div class="namee  animate__animated animate__fadeInDown animate__delay-1s">
+		<span class=""> FARHOD </span><br><span class=""> RESTAURANT </span>
 	</div>
+</div>
 <div class="hidden-xs">
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar1">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item nav-item1 active">
-        <a class="nav-link anav" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">Menu</a>
-      </li>
-      <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">Gallery</a>
-      </li>
-      <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">Contacts</a>
-      </li>
-    </ul>
-   
-  </div>
-</nav> -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar1">
-  <!-- Brand/logo -->
-  <!-- <a class="navbar-brand" href="#">Logo</a> -->
-  
-  <!-- Links -->
-  <ul class="navbar-nav">
-		  <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">Menu</a>
-      </li>
-      <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">Gallery</a>
-      </li>
-      <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item nav-item1">
-        <a class="nav-link" href="#">Contacts</a>
-      </li>
-  </ul>
+  <a class="navbar-brand log" href="#"></a>
+  	<ul class="navbar-nav">
+		<li class="nav-item nav-item1">
+        	<a class="nav-link animate__animated animate__fadeInDown animate__delay-1s" href="#">Menu</a>
+      	</li>
+      		<li class="nav-item nav-item1">
+        		<a class="nav-link animate__animated animate__fadeInDown animate__delay-1s" href="#">Gallery</a>
+      		</li>
+      			<li class="nav-item nav-item1">
+        			<a class="nav-link animate__animated animate__fadeInDown animate__delay-1s" href="#">About</a>
+      			</li>
+      				<li class="nav-item nav-item1">
+        				<a class="nav-link animate__animated animate__fadeInDown animate__delay-1s" href="#">Contacts</a>
+      				</li>
+  	</ul>
 </nav>
 </div>
 <div class="visible-xs-inline-block">
@@ -438,26 +429,46 @@ section.ok{
 		<div class="container ff">
 	<div class="menu" tabindex="1">
 		<div class="list">
-			<a href="#"><span>Menu 1</span></a>
-			<a href="#"><span>Menu 1</span></a>
-			<a href="#"><span>Menu 1</span></a>
+			<a href="#"><span>Menu</span></a><br><br>
+			<a href="#"><span>Gallery</span></a><br><br>
+			<a href="#"><span>About</span></a><br><br>
+			<a href="#"><span>Contacts</span></a><br><br>
 		</div>
 		<div class="intro">
-			<div class="btn"></div>
+			<div class="btn animate__animated animate__flip animate__repeat-2"></div>
 		</div>
 	</div>	
 
 </div>
-	<div class="hrr"></div>
+			<div class="hrr">
+				
+			</div>
 </div>
+
+		<div class="hidden-xs animate__animated animate__bounce animate__infinite animate__delay-2s alert1">
+			<div class="alert alert-warning alert-dismissible fade show alert1" role="alert">
+  				 Этот сайт использует cookies. Вы можете изменить настройки cookies в своём браузере
+  				<button type="button" class="close close1" data-dismiss="alert" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+  				</button>
+			</div>
+		</div>
+		
+		<div class="visible-xs-inline-block">
+			<div class="alert alert-warning alert-dismissible fade show alert2" role="alert">
+  				 Этот сайт использует cookies. Вы можете изменить настройки cookies в своём браузере
+  				<button type="button" class="close close2" data-dismiss="alert" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+  				</button>
+			</div>
+		</div>
+
 <div id="section2">
 	<div style="height: 1000px; width: 100px;
 	background-color: red;"></div>
 </div>
-
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </body>
 </html>
