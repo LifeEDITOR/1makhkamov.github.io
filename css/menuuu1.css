@@ -4,7 +4,9 @@
 	min-height:100%;
 	display:block;
 	position:relative;
-	transform: translateY(-100vh)!important;
+	transform: translateY(-103.699vh)!important;
+
+
 	}
 
 .menu{
@@ -19,7 +21,7 @@
 	}
 
 .list,.intro{
-	height:95.4vh;
+	height:95.35vh;
 	top:0;
 	display:flex;
 	position: absolute;
@@ -33,7 +35,8 @@
 	}
 
 .list{
-	background:rgb(63, 212, 199);
+	/*background:linear-gradient(to left top, rgb(45, 73, 133), rgb(63, 212, 199));*/
+	background: #333;
 	width:51vw;
 	left:-120px;
 	opacity:0
