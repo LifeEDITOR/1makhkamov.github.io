@@ -3,7 +3,7 @@
 	min-height:100%;
 	display:block;
 	position:relative;
-	transform: translateY(-103.8vh)!important;
+	transform: translateY(-103.88vh)!important;
 
 
 	}
@@ -20,7 +20,7 @@
 	}
 
 .list,.intro{
-	height:95vh;
+	height:95.3vh;
 	top:0;
 	display:flex;
 	position: absolute;
@@ -64,8 +64,8 @@
 	background:#333;
 	width:45px;
 	height:45px;
-	top:10px;
-	left:10px;
+	top:7vw;
+	left:5vw;
 	display:block;
 	position:absolute;
 	border-radius:50%;
