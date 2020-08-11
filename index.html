@@ -306,7 +306,7 @@ section.ok{
 .hrr{
 	width: 100vw;
 	content: #333;
-	height: 0.281cm;
+	height: 0.3cm;
 	background: linear-gradient(to right, rgb(45, 73, 133) 30%, rgb(95, 174, 176));
 	opacity: 0.5;
 	position: absolute;
@@ -372,6 +372,22 @@ section.ok{
 .close2{
 	color: white!important;
 	font-size: 4vw!important;
+}
+.bookn{
+	color: #333;
+	}
+.book1{
+	margin-left: 34vh;
+	transform: translateY(-189.6vw);
+	font-family: Montserrat;
+	font-size: 13pt;
+	border-style: solid;
+	border-color: #333;
+	background: transparent;
+	color: #333;
+	text-decoration-line: none;
+	width: 21vh;
+	text-align: center;
 }
 </style>
 </head>
@@ -450,11 +466,24 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+$('.scrollto a').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 370,   // по умолчанию «400» 
+        easing: "linear" // по умолчанию «swing» 
+    });
+
+    return false;
+});
 </script>
 	</section>
 <div class="name1">
 	<div class="namee  animate__animated animate__fadeInDown animate__delay-1s">
-		<span class=""> _-_-_-_ </span><br><span class=""> RESTAURANT </span>
+		<span class=""> FARHOD </span><br><span class=""> RESTAURANT </span>
 	</div>
 </div>
 <div class="hidden-xs">
@@ -486,6 +515,7 @@ for (let smoothLink of smoothLinks) {
 			<a href="#"><span>About</span></a><br><br>
 			<a href="#"><span>Contacts</span></a><br><br>
 		</div>
+		<br>
 		<div class="intro">
 			<div class="btn animate__animated animate__flip animate__repeat-2"></div>
 		</div>
@@ -494,6 +524,12 @@ for (let smoothLink of smoothLinks) {
 </div>
 			<div class="hrr">
 				
+			</div>
+			
+			<div class="animate__animated animate__fadeInUp animate__delay-2s">
+				<div class="book1">
+			 		<a href="#" class="bookn"> BOOK NOW </a>
+				</div>
 			</div>
 </div>
 
