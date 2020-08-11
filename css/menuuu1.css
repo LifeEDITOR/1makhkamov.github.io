@@ -29,7 +29,7 @@
 	justify-content:center;
 	z-index:-1;
 	transition:all .75s ease;
-	transform: translateY(0.38vw);
+	transform: translateY(0.3vw);
 	transform: translateX(-5vw);
 	}
 
