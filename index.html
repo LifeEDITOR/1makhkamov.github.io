@@ -29,6 +29,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<style>
 		.head{
 	width: 100%;
@@ -144,29 +147,35 @@ a:hover{
 	height: 95vh!important;
 }
 .one{
-	background-image: url(img/1146_rsr003_00_p_1024x768.jpg);
+	background-image: url(img/unnamddded.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95vh!important;
 	width: 100%;
-	opacity: 0.7;
+	opacity: 0.78;
+	background-position: center;
+	background-color: black;
 
 }
 .two{
-	background-image: url(img/sea.jpeg);
+	background-image: url(img/pasta-ef52cf0233ec084f36dcb2b6c14593389ead89f9fc813f0e8e89c2c8556e49e7.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95vh!important;
 	width: 100%;
-	opacity: 0.7;
+	opacity: 0.78;
+	background-position: center;
+	background-color: black;
 }
 .three{
-	background-image: url(img/1146_rsr003_00_p_1024x768.jpg);
+	background-image: url(img/restaurant-food-4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95vh!important;
 	width: 100%;
-	opacity: 0.7;
+	opacity: 0.78;
+	background-position: center;
+	background-color: black;
 }
 /*body {
   background-color: #000;
@@ -263,6 +272,13 @@ section.ok{
 		color: #333;
 		
 }
+.namee1{
+		font-family: Montserrat;
+		font-size: 7vw;
+		text-align: center;
+		color: #333;
+		
+}
 .animate__animated{
 	transform: translateY(-55vh);
 }
@@ -271,7 +287,7 @@ section.ok{
 }
 .navbar1{
 	background: transparent;
-	transform: translateY(-125vh)!important;
+	transform: translateY(-120vh)!important;
 	border-radius: 0!important;
 	color: #333!important;
 	height: 2vh;
@@ -291,18 +307,39 @@ section.ok{
 	width: 100vw;
 	content: #333;
 	height: 0.281cm;
-	background: linear-gradient(to top, rgb(45, 73, 133) 30%, rgb(95, 174, 176));
+	background: linear-gradient(to right, rgb(45, 73, 133) 30%, rgb(95, 174, 176));
 	opacity: 0.5;
 	position: absolute;
 	top: 0;
 	border-bottom-color: #333;
+	border-bottom-width: 5px;
 }
 .nav-item1{
 	padding: 15%;
 	font-family: Montserrat;
 	transform: translateX(35vw);
-	height: 10px!important;
-	color: red!important;s
+	
+}
+.nav-item:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 3em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-bottom: 100px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.nav-item:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 .navbar-dark{
 	background: transparent!important;
@@ -400,6 +437,20 @@ section.ok{
  			</div>
 	<section>
 		<a href="#section2" class="scroll-down" address="true"></a>
+<script>
+	const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+</script>
 	</section>
 <div class="name1">
 	<div class="namee  animate__animated animate__fadeInDown animate__delay-1s">
@@ -468,6 +519,7 @@ section.ok{
 	<div style="height: 1000px; width: 100px;
 	background-color: red;"></div>
 </div>
+
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
