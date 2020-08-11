@@ -3240,3 +3240,16 @@
         return a.$ === r && (a.$ = Wb), b && a.jQuery === r && (a.jQuery = Vb), r
     }, b || (a.jQuery = a.$ = r), r
 });
+$('.scrollto a').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 370,   // по умолчанию «400» 
+        easing: "linear" // по умолчанию «swing» 
+    });
+
+    return false;
+});
