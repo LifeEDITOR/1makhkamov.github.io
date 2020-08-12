@@ -1,9 +1,10 @@
+
 .ff{
 	min-width:100%;
 	min-height:100%;
 	display:block;
 	position:relative;
-	transform: translateY(-102vh)!important;
+	transform: translateY(-103vh)!important;
 
 	}
 
@@ -64,7 +65,7 @@
 	width:45px;
 	height:45px;
 	/*margin-top: 0;*/
-	top: 1%;
+	top: 1.5%;
 	left:0.4cm;
 	display:flex;
 	position:absolute;
@@ -78,7 +79,7 @@
 	background:#333;
 
 	/*margin-top: 0;*/
-	top: 1%;
+	top: 1.5%;
 	left:0.4cm;
 	display:block;
 	position:absolute;
