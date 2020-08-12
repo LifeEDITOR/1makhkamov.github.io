@@ -3,8 +3,7 @@
 	min-height:100%;
 	display:block;
 	position:relative;
-	transform: translateY(-103.88vh)!important;
-
+	transform: translateY(-102vh)!important;
 
 	}
 
@@ -20,16 +19,16 @@
 	}
 
 .list,.intro{
-	height:95.3vh;
+	height:95vh;
 	top:0;
-	display:flex;
+	display:inline-flex;
 	position: absolute;
 	align-items:center;
 	flex-flow:column wrap;
 	justify-content:center;
 	z-index:-1;
 	transition:all .75s ease;
-	transform: translateY(0.3vw);
+
 	transform: translateX(-5vw);
 	}
 
@@ -64,14 +63,28 @@
 	background:#333;
 	width:45px;
 	height:45px;
-	top:0.8cm;
-	left:0.5cm;
-	display:block;
+	/*margin-top: 0;*/
+	top: 1%;
+	left:0.4cm;
+	display:flex;
 	position:absolute;
 	border-radius:50%;
 	opacity: o.5;
 	color: white;
 	text-align: center;
+	
+	}
+	.btndd{
+	background:#333;
+
+	/*margin-top: 0;*/
+	top: 1%;
+	left:0.4cm;
+	display:block;
+	position:absolute;
+
+
+
 
 	}
 
