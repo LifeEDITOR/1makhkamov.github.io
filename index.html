@@ -156,7 +156,7 @@ a:hover{
 	height: 95vh!important;
 }
 .one{
-	background-image: url(img/unnamddded.jpg);
+	background-image: url(https://source.unsplash.com/1000x800);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95vh!important;
@@ -167,7 +167,7 @@ a:hover{
 
 }
 .two{
-	background-image: url(img/pasta-ef52cf0233ec084f36dcb2b6c14593389ead89f9fc813f0e8e89c2c8556e49e7.jpg);
+	background-image: url(https://source.unsplash.com/1000x802);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95vh!important;
@@ -177,7 +177,7 @@ a:hover{
 	background-color: black;
 }
 .three{
-	background-image: url(img/restaurant-food-4.jpg);
+	background-image: url(https://source.unsplash.com/1000x806);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95vh!important;
@@ -333,12 +333,16 @@ section.ok{
 	width: 100vw;
 	content: #333;
 	height: 0.3cm;
-	background: linear-gradient(to right, rgb(45, 73, 133) 30%, rgb(95, 174, 176));
+	/*background: linear-gradient(to right, rgb(45, 73, 133) 30%, rgb(95, 174, 176));*/
 	opacity: 0.5;
 	position: absolute;
 	top: 0;
 	border-bottom-color: #333;
 	border-bottom-width: 5px;
+	background-image: url(https://source.unsplash.com/1000x808);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .nav-item1{
 	padding: 10%;
@@ -439,7 +443,89 @@ section.ok{
 .log:hover{
 	border-color: rgb(237, 237, 237);
 }
+.content1{
+	width: 95%;
+	height: 75vh;
+	/*border-style: solid;*/
+	position: absolute;
+	justify-content: center;
+	text-align: center;
+	right: 2.5%;
+	left: 2.5%;
+}
 
+.content11{
+	width: 40vh;
+	border-style: solid;
+	height: 100px;
+}
+.main
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.main__item
+{
+  padding: 10px;
+  margin-right: 5px;
+  height: 40vh;
+  top: 10%;
+  width: 60%;
+}
+.itemm1{
+	background-image: url(img/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.container6 {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box9 {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box9 > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box9 > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box9:hover { flex: 1 1 50%; }
+.box9:hover > img {
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 <body>
@@ -502,6 +588,28 @@ section.ok{
     					</div>
   					</div>
  			</div>
+
+ 			<div class="content1" id="section2">
+				<div class="container6">
+  					<div class="box9">
+    					<img src="https://source.unsplash.com/1000x800">
+    	
+  					</div>
+  					<div class="box9">
+    					<img src="https://source.unsplash.com/1000x802">
+    			
+  					</div>
+  					<div class="box9">
+    					<img src="https://source.unsplash.com/1000x804">
+    			
+  					</div>
+  					<div class="box9">
+    					<img src="https://source.unsplash.com/1000x806">
+    				
+  					</div>
+				</div>				
+			</div>
+	
 	<section>
 		<a href="#section2" class="scroll-down" address="true"></a>
 <!-- <script>
@@ -578,6 +686,7 @@ $('.scrollto a').on('click', function() {
 			 			<!-- <span style="opacity: 0;">-</span> -->
 			</div>
 		</div>
+
 	</div>	
 
 </div>
@@ -604,10 +713,10 @@ $('.scrollto a').on('click', function() {
 			</div>
 		</div>
 
-<div id="section2">
+<!-- <div id="">
 	<div style="height: 1000px; width: 100px;
 	background-color: red;"></div>
-</div>
+</div> -->
 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
