@@ -33,6 +33,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<style>
+	html {
+  scroll-behavior: smooth;
+}
 body{
 	 height: 100vh;
     width:  100vw; 
@@ -464,7 +467,7 @@ section.ok{
  			</div>
 	<section>
 		<a href="#section2" class="scroll-down" address="true"></a>
-<script>
+<!-- <script>
 	const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
@@ -490,7 +493,8 @@ $('.scrollto a').on('click', function() {
 
     return false;
 });
-</script>
+</script> -->
+
 	</section>
 <div class="name1">
 	<div class="namee  animate__animated animate__fadeInDown animate__delay-1s">
@@ -530,6 +534,7 @@ $('.scrollto a').on('click', function() {
 			<div class="btn btndd animate__animated animate__flip animate__repeat-2">
 				
 			</div>
+
 			<div class="bookd btndd">
 						<!-- <span style="opacity: 0;">-</span> -->
 			 		<a href="#" class="booka"> BOOK NOW </a>
@@ -542,12 +547,6 @@ $('.scrollto a').on('click', function() {
 			<div class="hrr">
 				
 			</div>
-
-			<!-- <div class="animate__animated animate__fadeInUp animate__delay-2s"> -->
-				
-			<!-- </div> -->
-
-
 </div>
 
 		<div class="hidden-xs animate__animated animate__bounce animate__fadeInUpBig  animate__delay-1.5s alert1">
