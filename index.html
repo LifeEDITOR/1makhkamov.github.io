@@ -541,7 +541,7 @@ section.ok{
 /*  box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
   margin-top: 89vh;
   overflow-x: scroll; /* Добавляем полосу прокрутки */
-    padding: 5px; /* Поля вокруг текста */
+  padding: 5px; /* Поля вокруг текста */
 
   
 }
@@ -572,7 +572,7 @@ section.ok{
     -moz-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
     box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
     overflow: hidden;
-    background-color: #000;
+    background-color: rgba(0,0,0, 0.0);
     position: relative;	
 }
 
@@ -598,6 +598,8 @@ section.ok{
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+
+  	overflow-x: scroll; /* Добавляем полосу прокрутки */
 }
 
 .coursemeal__div {
@@ -629,7 +631,7 @@ section.ok{
 
 .coursemeal-info__link:link,
 .coursemeal-info__link:visited {
-    font-family: 'Abril Fatface', cursive;
+    font-family: Montserrat;
     font-size: 30px;
     color: #fff;
     text-align: center;
@@ -659,6 +661,7 @@ section.ok{
         padding: 0;
         flex: 0 0 100%;
         text-align: center;
+  		overflow-x: scroll;
     }
 
 }
@@ -666,19 +669,27 @@ section.ok{
 @media only screen and (max-width: 991px) {
     .demo-description  {
         margin-bottom: 30px;
+        overflow-x: scroll;
     }
     .coursemeal  {
-        height: 90vh;
+        height: 50vh;
         flex-wrap: wrap;
+        width: 130vh;
     }
 
     .coursemeal__div {
-        flex: 0 0 100%;
-        height: 33.33333%;
+       /* flex: 0 0 100%;*/
+        height: 100%;
+
     }
 
     .responsive-img img {
         height: 100%;
+        padding-right: 10px;
+        -webkit-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    -moz-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    overflow: hidden;
     }
 
     .coursemeal__div:nth-of-type(2) img {
@@ -686,7 +697,8 @@ section.ok{
     }
 
     .coursemeal-info {
-        height: 20%
+        height: 20%;
+        width: calc(100% - 10px);
     }
 }
 
@@ -705,6 +717,10 @@ section.ok{
 .menu3{
 	color: lightgray;
 	opacity: 0;
+	font-family: Montserrat;
+	text-align: center;
+	padding: 10px;
+	font-size: 10pt;
 }
 </style>
 </head>
@@ -841,7 +857,7 @@ $('.scrollto a').on('click', function() {
         	<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#main">Menu</a>
       	</li>
       		<li class="nav-item nav-item1">
-        		<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#">Gallery</a>
+        		<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#section2">Gallery</a>
       		</li>
       			<li class="nav-item nav-item1">
         			<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#">About</a>
@@ -858,7 +874,7 @@ $('.scrollto a').on('click', function() {
 	<div class="menu" tabindex="1">
 		<div class="list">
 			<a href="#main"><span>Menu</span></a><br><br>
-			<a href="#"><span>Gallery</span></a><br><br>
+			<a href="#section2"><span>Gallery</span></a><br><br>
 			<a href="#"><span>About</span></a><br><br>
 			<a href="#"><span>Contacts</span></a><br><br>
 		</div>
@@ -882,8 +898,9 @@ $('.scrollto a').on('click', function() {
 			</div>
 </div>
 <div class="content0">
-          <div class="cont1">
-          <span class="dmenu">MENU</span><br><hr>
+<span class="dmenu">MENU</span><br><hr>
+          <div class="cont1" id="main">
+          
  <div class="demo coursemeal">
 
         <!-- APPETIZERS-->
@@ -897,7 +914,7 @@ $('.scrollto a').on('click', function() {
             </picture>     
             
             <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Appetizer</a>
+                <a href="#" class="coursemeal-info__link">Menu Platinum</a>
                 <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam dicta sed, asperiores eos quo sint quibusdam ad, impedit qui dolore repellat, error repellendus laborum unde. Enim voluptatum totam maiores?</span>
             </div>
         </div>
@@ -913,7 +930,7 @@ $('.scrollto a').on('click', function() {
             </picture> 
 
             <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Main Course</a>
+                <a href="#" class="coursemeal-info__link">Menu Gold</a>
                 <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quibusdam amet cumque consequuntur eos vel eveniet sapiente fugit nobis sequi quos iusto necessitatibus nesciunt voluptatem laboriosam vitae, rerum quo harum?</span>
             </div>            
         </div>
@@ -929,7 +946,7 @@ $('.scrollto a').on('click', function() {
             </picture>
 
             <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Dessert</a>
+                <a href="#" class="coursemeal-info__link">Menu Silver</a>
                 <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit obcaecati assumenda quo ut quod culpa cupiditate atque, ipsa nostrum, earum minima rerum. Praesentium eaque, iste culpa aut optio nobis harum.</span>
             </div>              
         </div>
