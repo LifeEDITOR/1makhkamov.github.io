@@ -540,6 +540,9 @@ section.ok{
   background-color:white;
 /*  box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
   margin-top: 89vh;
+  overflow-x: scroll; /* Добавляем полосу прокрутки */
+    padding: 5px; /* Поля вокруг текста */
+
   
 }
 .cont2{
@@ -641,6 +644,9 @@ section.ok{
     height: 100%;
     background-color: rgba(0,0,0, 0.6);
 }
+.coursemeal__div:hover .menu3 {
+    opacity: 1;
+}
 
 
 
@@ -661,9 +667,8 @@ section.ok{
     .demo-description  {
         margin-bottom: 30px;
     }
-
     .coursemeal  {
-        height: 75vh;
+        height: 90vh;
         flex-wrap: wrap;
     }
 
@@ -689,7 +694,6 @@ section.ok{
     .coursemeal__div:nth-of-type(1) img {
         object-position: 50% 75%;
     }
-
     .coursemeal__div:nth-of-type(3) img {
         object-position: 50% 60%;
     }    
@@ -697,6 +701,10 @@ section.ok{
     .coursemeal-info__title {
         font-size: 25px;
     }    
+}
+.menu3{
+	color: lightgray;
+	opacity: 0;
 }
 </style>
 </head>
@@ -784,7 +792,7 @@ section.ok{
 	
 	<section>
 		<a href="#section2" class="scroll-down" address="true"></a>
-<script>
+<!-- <script>
 	const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
@@ -810,7 +818,7 @@ $('.scrollto a').on('click', function() {
 
     return false;
 });
-</script>
+</script> -->
 
 	</section>
 
@@ -875,6 +883,7 @@ $('.scrollto a').on('click', function() {
 </div>
 <div class="content0">
           <div class="cont1">
+          <span class="dmenu">MENU</span><br><hr>
  <div class="demo coursemeal">
 
         <!-- APPETIZERS-->
@@ -889,6 +898,7 @@ $('.scrollto a').on('click', function() {
             
             <div class="coursemeal-info">
                 <a href="#" class="coursemeal-info__link">Appetizer</a>
+                <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam dicta sed, asperiores eos quo sint quibusdam ad, impedit qui dolore repellat, error repellendus laborum unde. Enim voluptatum totam maiores?</span>
             </div>
         </div>
 
@@ -904,6 +914,7 @@ $('.scrollto a').on('click', function() {
 
             <div class="coursemeal-info">
                 <a href="#" class="coursemeal-info__link">Main Course</a>
+                <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quibusdam amet cumque consequuntur eos vel eveniet sapiente fugit nobis sequi quos iusto necessitatibus nesciunt voluptatem laboriosam vitae, rerum quo harum?</span>
             </div>            
         </div>
 
@@ -919,6 +930,7 @@ $('.scrollto a').on('click', function() {
 
             <div class="coursemeal-info">
                 <a href="#" class="coursemeal-info__link">Dessert</a>
+                <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit obcaecati assumenda quo ut quod culpa cupiditate atque, ipsa nostrum, earum minima rerum. Praesentium eaque, iste culpa aut optio nobis harum.</span>
             </div>              
         </div>
 
