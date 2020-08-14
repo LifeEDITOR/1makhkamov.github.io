@@ -29,6 +29,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+  <link rel="stylesheet" href="flickity.css" media="screen">
+<script src="flickity.pkgd.min.js"></script>
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -39,6 +41,7 @@
 body{
 	 height: 100vh;
     width:  100vw; 
+   	/*background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);*/
 }
 
 
@@ -540,8 +543,6 @@ section.ok{
   background-color:white;
 /*  box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
   margin-top: 89vh;
-  overflow-x: scroll; /* Добавляем полосу прокрутки */
-  padding: 5px; /* Поля вокруг текста */
 
   
 }
@@ -564,156 +565,6 @@ section.ok{
 	border-radius: 50%;
 	border-color: #333;
 }
-.demo {
-    height:95%; 
-    width: 95%;
-    margin: 0 auto;  
-    -webkit-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
-    -moz-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
-    box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
-    overflow: hidden;
-    background-color: rgba(0,0,0, 0.0);
-    position: relative;	
-}
-
-.demo-description {
-    flex: 0 0 25%;
-    padding-right: 30px;
-}
-
-.demo-description__title {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 40px;
-    letter-spacing: 1.5px;
-    margin: 0;
-}
-
-.demo-description__p {
-    font-size: 17px;
-}
-
-
-/* ====== MAIN CODE ===== */
-.coursemeal {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-
-  	overflow-x: scroll; /* Добавляем полосу прокрутки */
-}
-
-.coursemeal__div {
-    flex: 0 0 33.3333333%;
-    position: relative;
-}
-
-.responsive-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.coursemeal-info {
-    background-color: rgba(0,0,0, 0.3);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 15%;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    transition: all 0.4s;
-}
-
-.coursemeal-info__link:link,
-.coursemeal-info__link:visited {
-    font-family: Montserrat;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    letter-spacing: 1.8px;
-    margin: 0;
-    text-decoration: none;
-
-    transition: all 0.4s;
-}
-
-.coursemeal__div:hover .coursemeal-info {
-    height: 100%;
-    background-color: rgba(0,0,0, 0.6);
-}
-.coursemeal__div:hover .menu3 {
-    opacity: 1;
-}
-
-
-
-@media only screen and (max-width: 1200px) {
-    body {
-        flex-wrap: wrap;
-    }
-
-    .demo-description { 
-        padding: 0;
-        flex: 0 0 100%;
-        text-align: center;
-  		overflow-x: scroll;
-    }
-
-}
-
-@media only screen and (max-width: 991px) {
-    .demo-description  {
-        margin-bottom: 30px;
-        overflow-x: scroll;
-    }
-    .coursemeal  {
-        height: 50vh;
-        flex-wrap: wrap;
-        width: 130vh;
-    }
-
-    .coursemeal__div {
-       /* flex: 0 0 100%;*/
-        height: 100%;
-
-    }
-
-    .responsive-img img {
-        height: 100%;
-        padding-right: 10px;
-        -webkit-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
-    -moz-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
-    box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
-    overflow: hidden;
-    }
-
-    .coursemeal__div:nth-of-type(2) img {
-        object-position: 50% 70%;
-    }
-
-    .coursemeal-info {
-        height: 20%;
-        width: calc(100% - 10px);
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .coursemeal__div:nth-of-type(1) img {
-        object-position: 50% 75%;
-    }
-    .coursemeal__div:nth-of-type(3) img {
-        object-position: 50% 60%;
-    }    
-
-    .coursemeal-info__title {
-        font-size: 25px;
-    }    
-}
 .menu3{
 	color: lightgray;
 	opacity: 0;
@@ -721,6 +572,68 @@ section.ok{
 	text-align: center;
 	padding: 10px;
 	font-size: 10pt;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery {
+  background: transparent;
+  width: 80vw;
+  height: 70vh;
+  left: 10vw;
+  right: 10vw;
+}
+
+.gallery-cell {
+  width: 66%;
+    height: 70vh;
+  margin-right: 10px;
+  background: transparent;
+  box-shadow: 0px 20px 30px rgba(0,0,0,.1);
+}
+/* cell number */
+.gallery-cell:before {
+  display: block;
+/*  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;*/
+}
+.dmenu{
+	text-align: center!important;
+	font-size: 5vw;
+	font-family: Montserrat;
+	font-style: italic;
+	transform: translateY(-1vh);
+	text-shadow: 7px -5px 0px rgba(0, 0, 0, 1);
+}
+img.limg{
+	width: 100%;
+	height: 60%;
+/*	background-image: url(https://source.unsplash.com/1000x808);
+	background-size: cover;
+	background-position: center;*/
+}
+img.limg1{
+	width: 100%;
+	height: 65%;
+/*	background-image: url(https://source.unsplash.com/1000x808);
+	background-size: cover;
+	background-position: center;*/
+}
+.gtext{
+	text-align: center;
+}
+.gtitlexs{
+	font-family: Montserrat;
+	color: #333;
+}
+.gtitlexs{
+	font-family: Montserrat;
+	color: #333;
 }
 </style>
 </head>
@@ -808,33 +721,7 @@ section.ok{
 	
 	<section>
 		<a href="#section2" class="scroll-down" address="true"></a>
-<!-- <script>
-	const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-};
-$('.scrollto a').on('click', function() {
-
-    let href = $(this).attr('href');
-
-    $('html, body').animate({
-        scrollTop: $(href).offset().top
-    }, {
-        duration: 370,   // по умолчанию «400» 
-        easing: "linear" // по умолчанию «swing» 
-    });
-
-    return false;
-});
-</script> -->
 
 	</section>
 
@@ -898,65 +785,91 @@ $('.scrollto a').on('click', function() {
 			</div>
 </div>
 <div class="content0">
-<span class="dmenu">MENU</span><br><hr>
-          <div class="cont1" id="main">
-          
- <div class="demo coursemeal">
+	
+         	<div class="cont1" id="main">
+		         	<div class="dmenu">
+		         		<span class="dmenu">MENU</span>
+		         		<hr width="60%">
+		         		<br>
+		         	</div>
+         		<div class="hidden-xs">
+	          		<div class="gallery js-flickity"
+	  data-flickity-options='{ "freeScroll": true }'>
+						  <div class="gallery-cell">
+						  		<img src="https://source.unsplash.com/1000x808" alt="" class="limg1">
+						  	<div class="gtext">
+						  		<span class="gtitle">Menu Platinum</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
+						  	</div>
+						  </div>
+						  <div class="gallery-cell">
+						  	<img src="https://source.unsplash.com/1000x806" alt="" class="limg1">
+						  	<div class="gtext">
+						  		<span class="gtitle">Menu Platinum</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
+						  	</div>
+						  </div>
+						  <div class="gallery-cell">
+						  	<img src="https://source.unsplash.com/1000x804" alt="" class="limg1">
+						  	<div class="gtext">
+						  		<span class="gtitle">Menu Platinum</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
+						  	</div>
+						  </div>
+						  <div class="gallery-cell">
+						  	<img src="https://source.unsplash.com/1000x802" alt="" class="limg1">
+						  	<div class="gtext">
+						  		<span class="gtitle">Menu Platinum</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
+						  	</div>
+						  </div>
+					</div>
+				</div>
+				<div class="visible-xs-inline-block">
+	          		<div class="gallery js-flickity"
+	  data-flickity-options='{ "freeScroll": true }'>
+						  <div class="gallery-cell">
+						  	<img src="https://source.unsplash.com/1000x808" alt="" class="limg">
+						  	<div class="gtext">
+						  		<span class="gtitlexs">Menu Platinum</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
+						  	</div>
+						  </div>
+						  <div class="gallery-cell">
+						  	<img src="https://source.unsplash.com/1000x806" alt="" class="limg">
+						  	<div class="gtext">
+						  		<span class="gtitlexs">Menu Gold</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam blanditiis quas architecto aliquid distinctio tempora iusto officiis sit, reprehenderit aperiam, minus deserunt doloribus iste consequuntur, beatae dicta. Animi, libero?</span>
+						  	</div>
+						  </div>
+						  <div class="gallery-cell">
+						  	<img src="https://source.unsplash.com/1000x804" alt="" class="limg">
+						  	<div class="gtext">
+						  		<span class="gtitlexs">Menu Bronze</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat cumque tempore autem, illo, totam praesentium deleniti temporibus, sequi inventore fugit qui. Repellat itaque cupiditate ex culpa. Nobis sequi aliquid quaerat.</span>
+						  	</div>
+						  </div>
+						  <div class="gallery-cell">
+						  	<img src="https://source.unsplash.com/1000x802" alt="" class="limg">
+						  	<div class="gtext">
+						  		<span class="gtitlexs">Menu Silver</span>
+						  		<br><br>
+						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repellendus quas, aut labore unde magnam a quo, et vel possimus nesciunt, qui aperiam ullam blanditiis incidunt ducimus commodi officiis soluta!</span>
+						  	</div>
+						  </div>
+					</div>
+				</div>	
+    		</div>
 
-        <!-- APPETIZERS-->
-        <div class="coursemeal__div ">
-            
-            <picture class="responsive-img">
-                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/jSTZmp8H/appetizer-img-1.jpg">
-                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/1RTdCYhB/appetizer-img-2.jpg">
-                <source srcset="https://i.postimg.cc/TwnctQr7/appetizer-img-3.jpg">
-                <img src="https://i.postimg.cc/jSTZmp8H/appetizer-img-1.jpg" alt="Appetizer" >
-            </picture>     
-            
-            <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Menu Platinum</a>
-                <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam dicta sed, asperiores eos quo sint quibusdam ad, impedit qui dolore repellat, error repellendus laborum unde. Enim voluptatum totam maiores?</span>
-            </div>
-        </div>
-
-        <!-- MAIN COURSE-->
-        <div class="coursemeal__div">
-            
-            <picture class="responsive-img">
-                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/V6NCCRK0/maindish-img-1.jpg">
-                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/9XYj186s/maindish-img-2.jpg">
-                <source srcset="https://i.postimg.cc/pLY8dt4q/maindish-img-3.jpg">
-                <img src="https://i.postimg.cc/V6NCCRK0/maindish-img-1.jpg" alt="Main Course" >
-            </picture> 
-
-            <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Menu Gold</a>
-                <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quibusdam amet cumque consequuntur eos vel eveniet sapiente fugit nobis sequi quos iusto necessitatibus nesciunt voluptatem laboriosam vitae, rerum quo harum?</span>
-            </div>            
-        </div>
-
-        <!-- DESSERTS-->
-        <div class="coursemeal__div">
-            
-            <picture class="responsive-img">
-                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/9FfLh6ZZ/dessert-img-1.jpg">
-                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/FsRXBnKn/dessert-img-2.jpg">
-                <source srcset="https://i.postimg.cc/ZKcFCVFZ/dessert-img-3.jpg">
-                <img src="https://i.postimg.cc/ZKcFCVFZ/dessert-img-1.jpg" alt="Desserts">
-            </picture>
-
-            <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Menu Silver</a>
-                <span class="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit obcaecati assumenda quo ut quod culpa cupiditate atque, ipsa nostrum, earum minima rerum. Praesentium eaque, iste culpa aut optio nobis harum.</span>
-            </div>              
-        </div>
-
-
-    </div>
-    </div>
-
-
-    </div>
+<div class="cont2"></div>
+</div>
 		<!-- <div class="hidden-xs animate__animated animate__bounce animate__fadeInUpBig  animate__delay-1.5s alert1">
 			<div class="alert alert-warning alert-dismissible fade show alert1" role="alert">
   				 Этот сайт использует cookies. Вы можете изменить настройки cookies в своём браузере
@@ -979,9 +892,23 @@ $('.scrollto a').on('click', function() {
 	<div style="height: 1000px; width: 100px;
 	background-color: red;"></div>
 </div> -->
-
+<!--Big blue-->
+<div class="preloader-wrapper active">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div>
+    <div class="gap-patch">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-clipper right">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+<!-- background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%); -->
