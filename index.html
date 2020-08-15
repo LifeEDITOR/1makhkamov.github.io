@@ -39,8 +39,8 @@
   scroll-behavior: smooth;
 }
 body{
-	 height: 100vh;
-    width:  100vw; 
+	
+    width:  100vw!important; 
    	/*background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);*/
 }
 
@@ -547,7 +547,7 @@ section.ok{
   
 }
 .cont2{
-  height: 1000px;
+	height: 40vh;
 }
 .mitemid{
 	width: 100%;
@@ -580,10 +580,10 @@ section.ok{
 
 .gallery {
   background: transparent;
-  width: 85vw;
-  height: 70vh;
-  left: 7.5vw;
-  right: 7.5vw;
+  width: 90vw;
+  height: 73vh;
+  left: 5vw;
+  right: 5vw;
 }
 
 .gallery-cell {
@@ -637,9 +637,113 @@ img.limg1{
 	font-family: Montserrat;
 	color: #333;
 }
+.ddd{
+	width: 200px;
+	height: 100px;
+	border-style: solid;
+	border-width: 2px;
+}
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);
+z-index: 30;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(images/oval.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 78px;
+  height: 78px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #333;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
 </style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
-<body scroll="yes">
+<body>
+<div id="p_prldr"><div class="contpre">
+	<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+	<br><br></div>
+	<script type="text/javascript">$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');
+});</script>
+</div>
 	<div class="hidden-xs">
 		<div class="head">
 			<div class="container-fluid">
@@ -870,8 +974,10 @@ img.limg1{
 				</div>	
     		</div>
 
-<div class="cont2"></div>
+<div class="cont2">
 </div>
+</div>
+dddddddddddddd
 		<!-- <div class="hidden-xs animate__animated animate__bounce animate__fadeInUpBig  animate__delay-1.5s alert1">
 			<div class="alert alert-warning alert-dismissible fade show alert1" role="alert">
   				 Этот сайт использует cookies. Вы можете изменить настройки cookies в своём браузере
@@ -898,6 +1004,7 @@ img.limg1{
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </body>
 </html>
 <!-- background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%); -->
