@@ -43,8 +43,6 @@ body{
     width:  100vw!important; 
    	/*background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);*/
 }
-
-
 		.head{
 	width: 100%;
 	background-color: #333;
@@ -143,7 +141,6 @@ body{
 	position: absolute;}
 
 a:hover{
-
 	text-decoration: none;
 	text-underline-position: none;
 }
@@ -189,18 +186,6 @@ a:hover{
 	background-position: center;
 	background-color: black;
 }
-/*body {
-  background-color: #000;
-}
-
-*,
-:after,
-:before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-*/
 section {
   /*height: 100vh;*/
   width: 100%;
@@ -210,15 +195,6 @@ section {
 section.ok{
   background-color: #555;
 }
-
-/*p{
-  color: white;
-  font-family: arial;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-*/
 .scroll-down {
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
@@ -277,20 +253,6 @@ section.ok{
     transform: translateY(-5px);
   }
 }
-/*.namee{
-		font-family: Montserrat;
-		font-size: 5vw;
-		text-align: center;
-		color: #333;
-		
-}
-.namee1{
-		font-family: Montserrat;
-		font-size: 7vw;
-		text-align: center;
-		color: #333;
-		
-}*/
 .namee{
 		font-family: Montserrat;
 		font-size: 5vw;
@@ -309,9 +271,6 @@ section.ok{
 .name1{
 	transform: translateY(-55vh)!important;
 }
-/*.animate__animated{
-	transform: translateY(-55vh);
-}*/
 .name1{
 	transform: translateY(-55vh)!important;
 }
@@ -351,12 +310,10 @@ section.ok{
 .navv1{
 	border-color: #333;
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1)!important;
-/*	background-color: rgba(255, 255, 255, 0.1);*/
 	color: #333!important;
 	border-width: 0.1vw;
 	opacity: 1!important;
 	font-weight: bold;
-/*	border-radius: 10%;*/
 }
 .nav-item1{
 	padding: 17%;
@@ -604,14 +561,8 @@ border-color: rgba(230, 230, 230, 1);
   width: 100%!important;
 
 }
-/* cell number */
 .gallery-cell:before {
   display: block;
-/*  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;*/
 }
 .dmenu{
 	text-align: center!important;
@@ -662,103 +613,273 @@ right:0;
 bottom:0;
 background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);
 z-index: 30;
+width: 100%;
 }
-.contpre small{font-size:25px;}
- 
-.contpre{
-width: 250px;
-height: 100px;
-position: absolute;
-left: 50%;top: 48%;
-margin-left:-125px;
-margin-top:-75px;
-color:#fff;
-font-size:40px;
-letter-spacing:-2px;
-text-align:center;
-line-height:35px;}
- 
-#p_prldr .svg_anm {
-position: absolute;
-width: 41px;
-height: 41px;
-background: url(images/oval.svg) center center no-repeat;
-background-size:41px;    
-margin: -16px 0 0 -16px;
+.loadspan{
+	text-align: center;
+	transform: translateY(47vh);
 }
-.lds-ellipsis {
-  display: inline-block;
+.demo {
+    height: 500px; 
+    width: 1200px;
+    margin: 0 auto;  
+    -webkit-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    -moz-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.demo-description {
+    flex: 0 0 25%;
+    padding-right: 30px;
+}
+
+.demo-description__title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.demo-description__p {
+    font-size: 17px;
+}
+
+
+/* ====== MAIN CODE ===== */
+.coursemeal {
+    display: flex;
+    align-items: stretch;
+}
+
+.coursemeal__div {
+    flex: 0 0 33.3333333%;
+    position: relative;
+
+}
+
+.responsive-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.coursemeal-info {
+    background-color: rgba(0,0,0, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    transition: all 0.4s;
+}
+
+.coursemeal-info__link:link,
+.coursemeal-info__link:visited {
+    font-family: Montserrat;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.8px;
+    margin: 0;
+    text-decoration: none;
+
+    transition: all 0.4s;
+}
+
+.coursemeal__div:hover .coursemeal-info {
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+}
+.coursemeal__div:hover .mspan {
+    opacity: 1;
+    color: lightgray;
+    font-size: 12pt;
+    font-family: Montserrat;
+    text-align: center;
+
+}
+.uparroww{
+	color: lightgray;
+	filter: blur(1px);
+}
+.coursemeal__div:hover .uparroww{
+	animation-play-state: paused!important;
+	transform: rotate(180deg)!important;
+	transition: .8s!important;
+	
+}
+
+.mspan{
+	opacity: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    body {
+        flex-wrap: wrap;
+    }
+
+    .demo-description { 
+        padding: 0;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+}
+.loader {
   position: relative;
-  width: 35px;
-  height: 35px;
+  margin: 0 auto;
+  width: 100px;
+  top: 40%;
 }
-.lds-ellipsis div {
+.loader:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.circular {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  width: 100%;
   position: absolute;
-  top: 33px;
-  width: 18px;
-  height: 18px;
-left: 40%;
-right: 40%;
-  border-radius: 50%;
-  background: #333;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-.lds-ellipsis div:nth-child(1) {
-  left: 8px;
-  animation: lds-ellipsis1 0.6s infinite;
+
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
 }
-.lds-ellipsis div:nth-child(2) {
-  left: 8px;
-  animation: lds-ellipsis2 0.6s infinite;
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
-.lds-ellipsis div:nth-child(3) {
-  left: 32px;
-  animation: lds-ellipsis2 0.6s infinite;
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
-.lds-ellipsis div:nth-child(4) {
-  left: 56px;
-  animation: lds-ellipsis3 0.6s infinite;
-}
-@keyframes lds-ellipsis1 {
+@-webkit-keyframes dash {
   0% {
-    transform: scale(0);
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
   }
   100% {
-    transform: scale(1);
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
   }
 }
-@keyframes lds-ellipsis3 {
+@keyframes dash {
   0% {
-    transform: scale(1);
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
   }
   100% {
-    transform: scale(0);
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
   }
 }
-@keyframes lds-ellipsis2 {
+@-webkit-keyframes color {
+  100%,
   0% {
-    transform: translate(0, 0);
+    stroke: #d62d20;
   }
-  100% {
-    transform: translate(24px, 0);
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #333;
   }
 }
-*.animate__animated{
-	animation-delay: 5s!important;
+@keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #57201d;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
 }
+.showbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5%;
+}
+.footerr{
+	width: 100%;
+	height: 45vh;
+	background-color: #333;
+}
+.animate__animated {
+	animation-delay: 4.6s!important;
+}
+
 </style>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
-<body>
-<div id="p_prldr"><div class="contpre">
-	<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-	<br><br></div>
+<body class="js-loading">
+
+<div id="p_prldr">
+<div class="showbox">
+  <div class="loader">
+    <svg class="circular" viewBox="25 25 50 50">
+      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+  </div>
+</div>
 	<script type="text/javascript">$(window).on('load', function () {
     var $preloader = $('#p_prldr'),
         $svg_anm   = $preloader.find('.svg_anm');
     $svg_anm.fadeOut();
     $preloader.delay(500).fadeOut('slow');
-});</script>
+
+});;
+</script>
 </div>
 	<div class="hidden-xs">
 		<div class="head">
@@ -849,7 +970,7 @@ right: 40%;
 
 <div class="name1">
 	<div class="namee  animate__animated animate__fadeInDown animate__delay-1s">
-		<span class="text"> FARHOD </span><br><span class=""> RESTAURANT </span>
+		<span class="text"> SHARQONA </span><br><span class=""> RESTAURANT </span>
 	</div>
 </div>
 <div class="hidden-xs">
@@ -915,7 +1036,7 @@ right: 40%;
 		         		<br>
 		         	</div>
          		<div class="hidden-xs">
-	          		<div class="gallery js-flickity gallery8"
+	          		<!-- <div class="gallery js-flickity gallery8"
 	  data-flickity-options='{ "freeScroll": true }'>
 						  <div class="gallery-cell gallery-cell2">
 						  		<img src="https://source.unsplash.com/1000x808" alt="" class="limg1">
@@ -924,69 +1045,101 @@ right: 40%;
 						  		<br><br>
 						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
 						  	</div>
-						  </div>
+						  </div>  
+					</div> -->
+					<div class="demo coursemeal">
+        <!-- APPETIZERS-->
+        <div class="coursemeal__div ">
+            <picture class="responsive-img">
+                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/jSTZmp8H/appetizer-img-1.jpg">
+                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/1RTdCYhB/appetizer-img-2.jpg">
+                <source srcset="https://i.postimg.cc/TwnctQr7/appetizer-img-3.jpg">
+                <img src="https://i.postimg.cc/jSTZmp8H/appetizer-img-1.jpg" alt="Appetizer" >
+            </picture>     
+            
+            <div class="coursemeal-info">
+                <a href="#" class="coursemeal-info__link">Menu Silver <br>
+                <span class="uparroww">
+                <p class="animate__animated animate__bounce animate__infinite animate__slow"> <i class="fa fa-sort-up"></i> </p>
+                </span>
+                </a>
+                <span class="mspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque laudantium voluptatum nemo blanditiis, modi expedita fugit pariatur dolorem tenetur ratione ab culpa ex assumenda possimus aliquam, tempore, debitis, magnam architecto.</span>
+            </div>
+        </div>
+
+        <!-- MAIN COURSE-->
+        <div class="coursemeal__div">
+            
+            <picture class="responsive-img">
+                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/V6NCCRK0/maindish-img-1.jpg">
+                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/9XYj186s/maindish-img-2.jpg">
+                <source srcset="https://i.postimg.cc/pLY8dt4q/maindish-img-3.jpg">
+                <img src="https://i.postimg.cc/V6NCCRK0/maindish-img-1.jpg" alt="Main Course" >
+            </picture> 
+
+            <div class="coursemeal-info">
+                <a href="#" class="coursemeal-info__link">Menu Gold <br>
+                <span class="uparroww">
+                <p class="animate__animated animate__bounce animate__infinite animate__slow"><i class="fa fa-sort-up"></i></p>
+                </span>
+                </a>
+                
+                <span class="mspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque laudantium voluptatum nemo blanditiis, modi expedita fugit pariatur dolorem tenetur ratione ab culpa ex assumenda possimus aliquam, tempore, debitis, magnam architecto.</span>
+            </div>            
+        </div>
+
+        <!-- DESSERTS-->
+        <div class="coursemeal__div">
+            
+            <picture class="responsive-img">
+                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/9FfLh6ZZ/dessert-img-1.jpg">
+                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/FsRXBnKn/dessert-img-2.jpg">
+                <source srcset="https://i.postimg.cc/ZKcFCVFZ/dessert-img-3.jpg">
+                <img src="https://i.postimg.cc/ZKcFCVFZ/dessert-img-1.jpg" alt="Desserts">
+            </picture>
+
+            <div class="coursemeal-info">
+                <a href="#" class="coursemeal-info__link">Menu Platinum <br>
+                <span class="uparroww">
+                <p class="animate__animated animate__bounce animate__infinite animate__slow"><i class="fa fa-sort-up"></i></p>
+                </span>
+                </a>
+                <span class="mspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque laudantium voluptatum nemo blanditiis, modi expedita fugit pariatur dolorem tenetur ratione ab culpa ex assumenda possimus aliquam, tempore, debitis, magnam architecto.</span>
+            </div>              
+        </div>
+    </div>
+</div>
+
+				<div class="visible-xs-inline-block">
+				<div class="gallery js-flickity gallery8"
+	  data-flickity-options='{ "freeScroll": true }'>
 						  <div class="gallery-cell gallery-cell2">
-						  		<img src="https://source.unsplash.com/1000x806" alt="" class="limg1">
+						  		<img src="https://source.unsplash.com/1000x808" alt="" class="limg1">
 						  	<div class="gtext">
 						  		<span class="gtitle">Menu Platinum</span>
 						  		<br><br>
 						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
 						  	</div>
-						  </div>
+						  </div>  
+
 						  <div class="gallery-cell gallery-cell2">
-						  		<img src="https://source.unsplash.com/1000x804" alt="" class="limg1">
+						  		<img src="https://source.unsplash.com/1000x808" alt="" class="limg1">
 						  	<div class="gtext">
 						  		<span class="gtitle">Menu Platinum</span>
 						  		<br><br>
 						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
 						  	</div>
-						  </div>
+						  </div> 
 						  <div class="gallery-cell gallery-cell2">
-						  		<img src="https://source.unsplash.com/1000x802" alt="" class="limg1">
+						  		<img src="https://source.unsplash.com/1000x808" alt="" class="limg1">
 						  	<div class="gtext">
 						  		<span class="gtitle">Menu Platinum</span>
 						  		<br><br>
 						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
 						  	</div>
-						  </div>
+						  </div> 
 					</div>
 				</div>
-				<div class="visible-xs-inline-block">
-	          		<div class="gallery js-flickity"
-	  data-flickity-options='{ "freeScroll": true }'>
-						  <div class="gallery-cell gallery-cell1">
-						  	<a href="#"><img src="https://source.unsplash.com/1000x808" alt="" class="limg"></a>
-						  	<div class="gtext">
-						  		<span class="gtitlexs">Menu Platinum</span>
-						  		<br><br>
-						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam blanditiis, dignissimos quae assumenda consequuntur. In eum officia, voluptate nobis laudantium id? Nisi laudantium sit, porro atque illum eveniet nihil.</span>
-						  	</div>
-						  </div>
-						  <div class="gallery-cell gallery-cell1">
-						  	<img src="https://source.unsplash.com/1000x806" alt="" class="limg">
-						  	<div class="gtext">
-						  		<span class="gtitlexs">Menu Gold</span>
-						  		<br><br>
-						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam blanditiis quas architecto aliquid distinctio tempora iusto officiis sit, reprehenderit aperiam, minus deserunt doloribus iste consequuntur, beatae dicta. Animi, libero?</span>
-						  	</div>
-						  </div>
-						  <div class="gallery-cell gallery-cell1">
-						  	<img src="https://source.unsplash.com/1000x804" alt="" class="limg">
-						  	<div class="gtext">
-						  		<span class="gtitlexs">Menu Bronze</span>
-						  		<br><br>
-						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat cumque tempore autem, illo, totam praesentium deleniti temporibus, sequi inventore fugit qui. Repellat itaque cupiditate ex culpa. Nobis sequi aliquid quaerat.</span>
-						  	</div>
-						  </div>
-						  <div class="gallery-cell gallery-cell1">
-						  	<img src="https://source.unsplash.com/1000x802" alt="" class="limg">
-						  	<div class="gtext">
-						  		<span class="gtitlexs">Menu Silver</span>
-						  		<br><br>
-						  		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repellendus quas, aut labore unde magnam a quo, et vel possimus nesciunt, qui aperiam ullam blanditiis incidunt ducimus commodi officiis soluta!</span>
-						  	</div>
-						  </div>
-					</div>
 				</div>	
     		</div>
 
@@ -1012,15 +1165,17 @@ dddddddddddddd
 			</div>
 		</div> -->
 
-<!-- <div id="">
-	<div style="height: 1000px; width: 100px;
-	background-color: red;"></div>
-</div> -->
+<div id="Contacts">
+	<div class="footerr">
+		<span style="font-family: Montserrat; font-size: 17pt; font-weight: bold; color: white;">Contacts</span>
+	</div>
+</div>
 <!--Big blue-->
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 </body>
 </html>
 <!-- background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%); -->
