@@ -645,22 +645,15 @@ width: 100%;
 	transform: translateY(47vh);
 }
 .demo {
-    height: 500px; 
+    height: 550px; 
     width: 100vw;
     margin: 0 auto;  
     overflow: hidden;
     background-color: transparent;
     position: relative;
-   /* border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 105px;
-    border-bottom-right-radius: 105px;
-    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
-    		 15px 15px 15px rgba(0,0,0,0.1);*/
-    		 
-/*    		 -webkit-box-shadow: inset 0px 50px 50px -20px rgba(91,91,91,0.6); 
-box-shadow: inset 0px 50px 50px -20px rgba(91,91,91,0.6);*/
 justify-content: center;
+    border-bottom-right-radius: 105px;
+    z-index: 1;
 
 }
 .demo-description {
@@ -709,7 +702,13 @@ justify-content: center;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+.nth3 *{
+	border-bottom-right-radius: 100px!important;
+}
+.nth33 {
 
+	
+}
 .coursemeal-info {
     background-color: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);
     position: absolute;
@@ -915,6 +914,7 @@ justify-content: center;
 	text-align: center;
 	color: lightgray;
 	border-width: 1px;
+	border-radius: 0!important;
 }
 .iconscar1{
 	width: 10vh!important;
@@ -924,6 +924,7 @@ justify-content: center;
 	color: gray;
 	border-width: 1px;
 	padding: 3px;
+	border-radius: 0!important;
 }
 .complains{
 	display: flex;
@@ -948,8 +949,8 @@ justify-content: center;
 	  position: relative;
   width: 22%;
   height: 400px;
-  border-radius: 10px;
-  background: white;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.01);
   box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
     		 15px 15px 15px rgba(0,0,0,0.1),
     		 inset -5px -5px 5px rgba(255,255,255,0.2),
@@ -959,7 +960,7 @@ justify-content: center;
 .complains .compl1 .pic{
 	position: relative;
   left: 50%;
-  top: 15%;
+  top: 8%;
   transform: translateX(-50%);
   width: 140px;
   height: 140px;
@@ -968,13 +969,18 @@ justify-content: center;
   border-radius: 50%;
   background: #f5f6fa;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  background-image: url(img/face8.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .complains .compl1 .pic:hover{
 	transform: rotate3d(180deg);
 	width: 200px;
 	height: 200px;
 }
-
+.complains .compl1 .pic2:hover .contentcompl{
+	font-size: 100pt;
+}
 .complains .compl1 .pic img{
 	width: 100%;
   height: 100%;
@@ -982,10 +988,22 @@ justify-content: center;
   background-color: #f5f6fa;
 }
 .contentcompl{
-	margin-top: 90px;
+	margin-top: 60px;
   text-align: center;
   padding: 0 90px;
   color: #2d3436;
+}
+.pic2{
+	background-image: url(img/facee1.png)!important;
+	background-position: center;
+	background-size: cover;
+
+}
+.pic3{
+	background-image: url(img/face1.jpg)!important;
+	background-position: center;
+	background-size: cover;
+
 }
 .titlecompl{
 	margin-bottom: 0;
@@ -1002,6 +1020,103 @@ justify-content: center;
   line-height: 1.4;
   color: #b0b0b0;
 }
+
+
+
+.complains1{
+	display: flex;
+  width: 100%;
+  height: 37vh;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+
+}
+.complains1:after{
+	content: "";
+  display: table;
+  clear: both;
+}
+.complll12{
+	 float: left;
+	 margin: 1.6vw;
+}
+.compl12{
+	position: relative;
+  width: 30vw;
+  height: 35vh;
+  border-radius: 10px;
+  background: white;
+  box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+    		 15px 15px 15px rgba(0,0,0,0.1),
+    		 inset -5px -5px 5px rgba(255,255,255,0.2),
+    		 inset 5px 5px 5px rgba(0,0,0,0.1);
+  
+}
+.complains1 .compl12 .pic1{
+	position: relative;
+  left: 50%;
+  top: 8%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  background: #f5f6fa;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  background-image: url(img/face8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.complains1 .compl12 .pic1:hover{
+	transform: rotate3d(180deg);
+	width: 100px;
+	height: 100px;
+}
+.complains1 .compl12 .pic2:hover .contentcompl{
+	font-size: 100pt;
+}
+.complains1 .compl12 .pic1 img{
+	width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f5f6fa;
+}
+.contentcompl1{
+	margin-top: 40px;
+  text-align: center;
+  padding: 0 8px;
+  color: #2d3436;
+}
+.pic2{
+	background-image: url(img/facee1.png)!important;
+	background-position: center;
+	background-size: cover;
+
+}
+.pic3{
+	background-image: url(img/face1.jpg)!important;
+	background-position: center;
+	background-size: cover;
+
+}
+.titlecompl1{
+	margin-bottom: 0;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 7pt;
+}
+.contentcompl1 span{
+	font-size: 5.3pt;
+  letter-spacing: 1.5px;
+}
+.contentcompl1 p{
+	margin: 20px 0;
+  font-size: 5pt;
+  line-height: 1.4;
+  color: #b0b0b0;
+}
 .rewievsc{
 	text-align: right;
 	padding-right: 5vw;
@@ -1010,6 +1125,19 @@ justify-content: center;
 	font-family: Montserrat;
 	font-size: 4.7vw;
 	text-shadow: 7px -5px 0px rgba(0, 0, 0, 0.7);
+}
+.rewievend{
+	width: 100%;
+	height: 30vh;
+	transform: skewX(20deg)!important;
+	background-color: white;
+	-webkit-box-shadow: 0px -15px 30px -18px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px -15px 30px -18px rgba(0,0,0,0.2);
+box-shadow: 0px -15px 30px -18px rgba(0,0,0,0.2);
+border-top-left-radius: 70%;
+border-top-right-radius: 15%;
+transform: skew(20deg 20deg);
+
 }
 </style>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -1255,16 +1383,16 @@ justify-content: center;
         </div>
 
         <!-- DESSERTS-->
-        <div class="coursemeal__div">
-            <picture class="responsive-img">
+        <div class="coursemeal__div nth3">
+            <picture class="responsive-img nth3">
                 <source media="(min-width: 992px)" srcset="https://i.postimg.cc/9FfLh6ZZ/dessert-img-1.jpg">
                 <source media="(min-width: 767px)" srcset="https://i.postimg.cc/FsRXBnKn/dessert-img-2.jpg">
                 <source srcset="https://i.postimg.cc/ZKcFCVFZ/dessert-img-3.jpg">
                 <img src="https://i.postimg.cc/ZKcFCVFZ/dessert-img-1.jpg" alt="Desserts">
             </picture>
 
-            <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Menu Platinum <br>
+            <div class="coursemeal-info nth33">
+                <a href="#" class="coursemeal-info__link ">Menu Platinum <br>
                 <span class="uparroww">
                 <p class="animate__animated animate__bounce animate__infinite animate__slow"><i class="glyphicon glyphicon-menu-up"></i></p>
                 </span>
@@ -1348,42 +1476,83 @@ justify-content: center;
 			<span class="rewievscs">Rewievs</span>
 		</div>
 		<br>
+		<div class="visible-xs-inline-block">
+	<div class="complains1">
+	<div class="complll12 compl12">
+		<div class="pic1">
+			<!-- <img src="img/face8.jpg" alt=""> -->
+		</div>
+		<div class="contentcompl1">
+				<h3 class="titlecompl1">Kendrick Qulyam</h3><span>FARHOD Co-Chief</span>
+				<div class="pcompll1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                  </div>
+			</div>
+	</div>
+	<div class="complll12 compl12">
+		<div class=" pic1 pic2">
+			<!-- <img src="https://source.unsplash.com/1000x806" alt=""> -->
+		</div>
+		<div class="contentcompl1">
+				<h3 class="titlecompl1">Miroslav Stepinskiy</h3><span>FARHOD Chief</span>
+				<div class="pcompll1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                  </div>
+			</div>
+	</div>
+	<div class="complll12 compl12">
+		<div class="pic1 pic3">
+			<!-- <img src="https://source.unsplash.com/1000x804" alt=""> -->
+		</div>
+		<div class="contentcompl1">
+				<h3 class="titlecompl1">Dejan Cloze</h3><span>FARHOD Co-Chief</span>
+				<div class="pcompll1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                  </div>
+			</div>
+	</div>
+</div>
+</div>
 <div class="hidden-xs">
 	<div class="complains">
 	<div class="complll1 compl1">
 		<div class="pic">
-			<img src="https://source.unsplash.com/1000x808" alt="">
+			<!-- <img src="img/face8.jpg" alt=""> -->
 		</div>
 		<div class="contentcompl">
-				<h3 class="titlecompl">Victor Close</h3><span>Monro Chief</span>
+				<h3 class="titlecompl">Kendrick Qulyam</h3><span>FARHOD Co-Chief</span>
 				<div class="pcompll">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
                   </div>
 			</div>
 	</div>
 	<div class="complll1 compl1">
-		<div class="pic">
-			<img src="https://source.unsplash.com/1000x806" alt="">
+		<div class=" pic pic2">
+			<!-- <img src="https://source.unsplash.com/1000x806" alt=""> -->
 		</div>
 		<div class="contentcompl">
-				<h3 class="titlecompl">Victor Close</h3><span>Monro Chief</span>
+				<h3 class="titlecompl">Miroslav Stepinskiy</h3><span>FARHOD Chief</span>
 				<div class="pcompll">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
                   </div>
 			</div>
 	</div>
 	<div class="complll1 compl1">
-		<div class="pic">
-			<img src="https://source.unsplash.com/1000x804" alt="">
+		<div class="pic pic3">
+			<!-- <img src="https://source.unsplash.com/1000x804" alt=""> -->
 		</div>
 		<div class="contentcompl">
-				<h3 class="titlecompl">Victor Close</h3><span>Monro Chief</span>
+				<h3 class="titlecompl">Dejan Cloze</h3><span>FARHOD Co-Chief</span>
 				<div class="pcompll">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
                   </div>
 			</div>
 	</div>
 </div>
+</div>
+<div style="width: 10vh; height: 9vh;"></div>
+<div class="rewievend">
+	
 </div>
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
