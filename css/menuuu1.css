@@ -69,7 +69,7 @@
 	left:0.4cm;
 	display:flex;
 	position:absolute;
-	border-radius:50%;
+	border-radius:50%!important;
 	opacity: o.5;
 	color: white;
 	text-align: center;
