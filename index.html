@@ -3,18 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RESTAURANT</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
@@ -35,13 +33,17 @@
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="js/compl.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<style>
 	html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 body{
 	scroll-behavior: smooth;
     width:  100vw!important; 
+    padding: 0!important;
+    margin: 0!important;
    	/*background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);*/
 }
 		.head{
@@ -921,7 +923,7 @@ justify-content: center;
 }
 .complains{
 	display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   flex-flow: row nowrap;
   justify-content: center;
@@ -1123,7 +1125,6 @@ justify-content: center;
 .rewievend{
 	width: 100%;
 	height: 30vh;
-	transform: skewX(20deg)!important;
 	background-color: white;
 	-webkit-box-shadow: 0px -15px 30px -18px rgba(0,0,0,0.2);
 -moz-box-shadow: 0px -15px 30px -18px rgba(0,0,0,0.2);
@@ -1132,6 +1133,81 @@ border-top-left-radius: 70%;
 border-top-right-radius: 15%;
 transform: skew(20deg 20deg);
 
+}
+.carousel-inner1{
+	width: 100%;
+	height: 37vh;
+	justify-content: center;
+}
+.carousel1 {
+	width: 60%;
+	height: 37vh;
+	left: 20vw;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 4vh!important;
+	justify-content: center;
+}
+.carousel1r {
+	width: 60%;
+	height: 37vh;
+	left: 20vw;
+	border-style: solid;
+	border-width: 1px;
+	transform: translateY(-10vh);
+	justify-content: center;
+}
+.rate{
+	margin-left: 6.3vw!important;
+	width: 80%;
+	margin-top: 8vh;
+	text-align: center;
+}
+.raterr{
+	margin-left: 6.3vw!important;
+	width: 82%;
+	margin-top: 2.2vh;
+	text-align: center;
+}
+.carousel-item1{
+	justify-content: center;
+}
+.rate1{
+	font-size: 11pt;
+	font-family: Montserrat;
+
+}
+.rate1rr{
+	font-size: 8.6pt;
+	font-family: Montserrat;
+
+}
+.rate2{
+	font-size: 11pt;
+	font-family: Montserrat, cursive;
+	opacity: 0.9;
+	padding: 1vh;
+	font-style: italic;
+
+}
+.carousel-indicators{
+	opacity: 0.8;
+	border-radius: 0!important;
+	height: 1vh;
+
+}
+.carousel-indicators:hover{
+	/*opacity: 0;*/
+}
+.rate3{
+	letter-spacing: 1vw;
+	bottom: 0!important;
+	color: gold;
+}
+.footerr1{
+	width: 100vw;
+	height: 60vh;
+	background-color: #333;
 }
 </style>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -1544,15 +1620,118 @@ transform: skew(20deg 20deg);
 	</div>
 </div>
 </div>
-<div style="width: 10vh; height: 9vh;"></div>
+<div style="height: 9vh;"></div>
 <div class="rewievend">
 	
 </div>
+  
+<div class="hidden-xs">
+	<div id="carouselExampleIndicators" class="carousel carousel1 slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner carousel-inner1">
+    <div class="carousel-item carousel-item1 active">
+ 		<div class="rate">
+ 			<span class="rate1">
+ 			<i class="fa fa-quote-left"> </i> Есть места, где чувствуешь себя, как дома - состояние спокойствия и комфорта. Потрясающая еда, от мясных блюд и закусок до великолепных десертов - если хочется попробовать восточную кухню - это ваш выбор.</span>
+ 			<div class="rate2">
+ 				- Zelim Fatih
+ 			</div>
+			<div class="rate1">
+				<span class="rate1 rate3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+			</div>
+ 		</div>
+ </div>
+<div class="carousel-item carousel-item1">
+	<div class="rate">
+ 			<span class="rate1">
+ 			<i class="fa fa-quote-left"> </i> Ресторан R самый лучший и дизайн ресторана в арабском стиле, не слишком много света и не слишком мало, очень уютный и музыка прекрасна Диджей Khaled будто бы чувствует энергию ресторана и придаёт тонкости к атмосфере внутри, музыка очень лёгкая и одновременно энергичная.</span>
+ 			<div class="rate2">
+ 				- Alexander Burki
+ 			</div>
+			<div class="rate1">
+				<span class="rate1 rate3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+			</div>
+ 		</div>
+</div>
+	<div class="carousel-item carousel-item1">
+		<div class="rate">
+			<span class="rate1">
+				<i class="fa fa-quote-left"> </i> В целом очень стильно и вкусно. Обстановка замечательная в плане оформления, ничего не отвлекает от вида на город. Выбор еды в прямом смысле вызывает шок и все так аппетитно смотрится.
+			</span>
+			<div class="rate2">
+ 				- Nuriddin Chusti
+ 			</div>
+			<div class="rate1">
+				<span class="rate1 rate3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></span>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+</div>
+<div class="visible-xs-inline-block">
+	<div id="carouselExampleIndicators" class="carousel carousel1r slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner carousel-inner1">
+    <div class="carousel-item carousel-item1 active">
+ 		<div class="raterr">
+ 			<span class="rate1rr">
+ 			<i class="fa fa-quote-left"> </i> Есть места, где чувствуешь себя, как дома - состояние спокойствия и комфорта. Потрясающая еда, от мясных блюд и закусок до великолепных десертов - если хочется попробовать восточную кухню - это ваш выбор.</span>
+ 			<div class="rate2">
+ 				- Zelim Fatih
+ 			</div>
+			<div class="rate1rr">
+				<span class="rate1rr rate3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+			</div>
+ 		</div>
+ </div>
+<div class="carousel-item carousel-item1">
+	<div class="raterr">
+ 			<span class="rate1rr">
+ 			<i class="fa fa-quote-left"> </i> Ресторан R самый лучший и дизайн ресторана в арабском стиле, не слишком много света и не слишком мало, очень уютный и музыка прекрасна Диджей Khaled будто бы чувствует энергию ресторана и придаёт тонкости к атмосфере внутри, музыка очень лёгкая и одновременно энергичная.</span>
+ 			<div class="rate2">
+ 				- Alexander Burki
+ 			</div>
+			<div class="rate1rr">
+				<span class="rate1rr rate3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+			</div>
+ 		</div>
+</div>
+	<div class="carousel-item carousel-item1">
+		<div class="raterr">
+			<span class="rate1rr">
+				<i class="fa fa-quote-left"> </i> В целом очень стильно и вкусно. Обстановка замечательная в плане оформления, ничего не отвлекает от вида на город. Выбор еды в прямом смысле вызывает шок и все так аппетитно смотрится.
+			</span>
+			<div class="rate2">
+ 				- Nuriddin Chusti
+ 			</div>
+			<div class="rate1rr">
+				<span class="rate1rr rate3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></span>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+</div>
 
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<div class="footerr1">
+	
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
