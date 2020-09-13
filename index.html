@@ -1,3 +1,11 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "full_db";
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +15,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/e1fe427445.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script src="js/jquery.js"></script>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+
 	<link rel="stylesheet" type="text/css" href="fonts/vicons/vicons-font.css" />
 	<link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Montserrat">
@@ -34,6 +42,9 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="js/compl.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'><link rel="stylesheet" href="css/styleblog.css">
 	<style>
 	html {
   scroll-behavior: smooth;
@@ -51,11 +62,13 @@ body{
 	background-color: #333;
 	position: relative;
 	object-fit: cover;
-	height: 45px;
+	height: 7vh;
 	text-transform: uppercase;
+	align-items: center!important;
+	justify-content: center!important;
 }
 .tel{
-	font-size: 13pt;
+	font-size: 1.2445095168374818vw;
 	/*letter-spacing: -1pt;*/
 	font-family: Montserrat;
 	color: rgb(237, 237, 237);
@@ -66,7 +79,7 @@ body{
 	text-underline-position: none;
 }
 .tel2{
-	font-size: 9pt;
+	font-size: 12px;
 	/*letter-spacing: -1pt;*/
 	font-family: Montserrat;
 	color: rgb(237, 237, 237);
@@ -75,25 +88,25 @@ body{
 	
 }
 .phtel{
-	font-size: 24pt;
+	font-size: 2.335vw;
 	color: rgb(95, 174, 176);
 	transform: translateY(7px);
 }
 .phtell{
-	font-size: 14pt;
+	font-size: 19px;
 	color: rgb(95, 174, 176);
 	transform: translateY(6.5px);
 	bottom: 0;
 
 }
 .location{
-	font-size: 23pt;
+	font-size: 2.255vw;
 	color: rgb(95, 174, 176);
 	transform: translateY(7px);
 	transform: translateX(10px;);
 }
 .location1{
-	font-size: 13pt;
+	font-size: 1.2445095168374818vw;
 	/*letter-spacing: -1pt;*/
 	font-family: Montserrat;
 	color: rgb(237, 237, 237);
@@ -102,15 +115,15 @@ body{
 .langu{
 	color: rgb(237, 237, 237);
 	font-family: Montserrat;
-	font-size: 13pt;
+	font-size: 1.2445095168374818vw;
 	border-width: 1px;
 	
 
 }
 .lang1{
 	color: rgb(95, 174, 176);
-	font-size: 17pt;
-	letter-spacing: 11pt;
+	font-size: 1.6837481698389458vw;
+	letter-spacing: 1.0980966325036603vw;
 	
 }
 .lang1:hover{
@@ -120,7 +133,7 @@ body{
 }
 .lang{
 	color: rgb(237, 237, 237);
-	font-size: 12pt;
+	font-size: 1.171303074670571vw;
 
 }
 .lang:hover{
@@ -129,7 +142,7 @@ body{
 }
 .lang5{
 	color: rgb(237, 237, 237);
-	font-size: 7.5pt;
+	font-size: 10px;
 
 }
 .lll{
@@ -152,7 +165,7 @@ a:hover{
 	background-color: #333;
 	/*transform: translateY(-10px);*/
 
-	height: 35px;
+	height: 5.327245053272451vh;
 	text-transform: uppercase;
 }
 .carousel-inner{
@@ -166,7 +179,7 @@ a:hover{
 	width: 100%;
 	opacity: 0.78;
 	background-position: center;
-	background-color: black;
+	background-color: #fff;
 
 }
 .two{
@@ -177,7 +190,7 @@ a:hover{
 	width: 100%;
 	opacity: 0.78;
 	background-position: center;
-	background-color: black;
+	background-color: #fff;
 }
 .three{
 	background-image: url(https://source.unsplash.com/1000x806);
@@ -187,7 +200,7 @@ a:hover{
 	width: 100%;
 	opacity: 0.78;
 	background-position: center;
-	background-color: black;
+	background-color: #fff;
 }
 section {
   /*height: 100vh;*/
@@ -277,7 +290,7 @@ section.ok{
 .name1{
 	transform: translateY(-55vh)!important;
 }
-.navbar1{
+/*.navbar1{
 	background: transparent;
 	transform: translateY(-120vh)!important;
 	border-radius: 0!important;
@@ -294,7 +307,7 @@ section.ok{
 	width: 100%;
 	height: 22vw;
 	position: absolute;
-}
+}*/
 .hrr{
 	width: 100vw;
 	content: #333;
@@ -347,10 +360,10 @@ section.ok{
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-.navbar-dark{
+/*.navbar-dark{
 	background: transparent!important;
 	color: #333!important;
-}
+}*/
 .alert1{
 	background: #333!important;
 	border-radius: 0;
@@ -465,7 +478,7 @@ section.ok{
 .box9 {
   flex: 1;
   overflow: hidden;
-  transition: .5s;
+  transition: .7s;
   margin: 0 2%;
   box-shadow: 0 20px 30px rgba(0,0,0,.1);
   line-height: 0;
@@ -508,21 +521,19 @@ section.ok{
   
 }
 .cont2{
-	height: 100vh;
-	background-color: white;
-	border-bottom-right-radius: 95%;
-	border-bottom-left-radius: 10%;
+	height: 130vh;
+	background: linear-gradient(#fff, #ffffff);
+	border-bottom-right-radius: 55%;
+	border-bottom-left-radius: 0;
 	box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
-    		 15px 15px 15px rgba(0,0,0,0.1);
+    		 15px 15px 15px rgba(0,0,0,0.1);	 
 }
 .cont22{
-	height: 50vh;
+	height: 60vh;
 	width: 100vw!important;
 	background-color: white;
-	border-bottom-right-radius: 95%;
-	border-bottom-left-radius: 10%;
-	box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
-    		 			15px 15px 15px rgba(0,0,0,0.1);
+	padding-top: 35vh;
+
 }
 .mitemid{
 	width: 100%;
@@ -650,24 +661,27 @@ width: 100%;
     height: 550px; 
     width: 100vw;
     margin: 0 auto;  
+    padding: 0 auto;
     overflow: hidden;
     background-color: transparent;
     position: relative;
-justify-content: center;
-    border-bottom-right-radius: 105px;
-    z-index: 1;
-
+justify-content: center!important;
+/*border-bottom-style: solid;
+border-color: rgba(0,0,0,0.04);*/
 }
 .demo-description {
     /*flex: 0 0 25%;
     padding-right: 30px;*/
     padding-right: 10px;
     padding-left: 10px;
-
+	border-style: dashed;
+	border-color: red;
 }
-
+.nth33{
+	border-bottom-left-radius: 40%!important;
+}
 .demo-description__title {
-    font-family: 'Abril Fatface', cursive;
+    font-family: Montserrat;
     font-size: 40px;
     letter-spacing: 1.5px;
     margin: 0;
@@ -686,6 +700,7 @@ justify-content: center;
     align-items: stretch;
     padding-right: 10px;
     padding-left: 10px;
+	
 }
 
 .coursemeal__div {
@@ -693,6 +708,13 @@ justify-content: center;
     position: relative;
     padding-right: 10px;
     padding-left: 10px;
+    transition: 0.4s;
+    border-bottom-left-radius: 15%!important;
+    border-top-right-radius: 15%!important;
+}
+.coursemeal__div:hover{
+	flex: 1 1 50%;
+
 
 }
 
@@ -701,12 +723,9 @@ justify-content: center;
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
-.nth3 *{
-	border-bottom-right-radius: 100px!important;
-}
-.nth33 *{
-	border-top-left-radius: 100px!important;
+    border-bottom-left-radius: 15%!important;
+    border-top-right-radius: 15%!important;
+
 }
 .coursemeal-info {
     background-color: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);
@@ -719,17 +738,14 @@ justify-content: center;
     justify-content: center;
     flex-wrap: wrap;
     transition: all 0.4s;
-/*    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;*/
-/*    border-top-style: dashed;*/
     border-width: 1.5px;
     border-color: rgba(0,0,0,0.5);
+        border-bottom-left-radius: 15%!important;
 }
 
 .coursemeal-info__link:link,
 .coursemeal-info__link:visited {
-    font-family: Montserrat cursive;
-    font-style: italic;
+    font-family: Montserrat;
     font-size: 30px;
     color: #fff;
     text-align: center;
@@ -739,14 +755,14 @@ justify-content: center;
     transition: all 0.8s;
 }
 
-.coursemeal__div:hover .coursemeal-info {
+.coursemeal-info:hover {
     height: 100%;
     background-color: rgba(0,0,0, 0.6);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
     transition: 0.7s
+    border-bottom-left-radius: 15%!important;
+    border-top-right-radius: 15%!important;
 }
-.coursemeal__div:hover .mspan {
+.coursemeal-info:hover .mspan {
     opacity: 1;
     color: lightgray;
     font-size: 12pt;
@@ -756,14 +772,16 @@ justify-content: center;
 }
 .uparroww{
 	color: white;
-	filter: blur(1px);
 	font-style: italic;
 	font-size: 12pt;
+	transition: 2s!important;
 }
-.coursemeal__div:hover .uparroww{
+.coursemeal-info:hover .uparroww{
+	transition: 2s!important;
 	animation-play-state: paused!important;
 	transform: rotate(180deg)!important;
 	transition: .8s!important;
+	
 }
 
 .mspan{
@@ -1017,16 +1035,27 @@ justify-content: center;
   color: #b0b0b0;
 }
 
-
-
-.complains1{
+.complains11{
 	display: flex;
   width: 100%;
-  height: 45vh;
+  height: auto;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   background: #fff;
+  margin-top: 30%;
+
+}
+
+.complains1{
+	display: flex;
+  width: 100%;
+  height: auto;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin-top: 18%;
 
 }
 .complains1:after{
@@ -1040,7 +1069,7 @@ justify-content: center;
 }
 .compl12{
 	position: relative;
-  width: 30vw;
+  width: 30.1vw;
   height: 35vh;
   border-radius: 10px;
   background: white;
@@ -1116,11 +1145,30 @@ justify-content: center;
 .rewievsc{
 	text-align: right;
 	padding-right: 5vw;
+	transform: translateY(2.5vh);
+}
+.rewievscdd{
+	text-align: right;
+	padding-right: -3vw;
+	transform: translateY(17vh);
 }
 .rewievscs{
 	font-family: Montserrat;
 	font-size: 4.7vw;
+	text-shadow: 7px -5px 0px rgba(0, 0, 0, 0.7);	
+}
+.rewievsc1{
+	text-align: right;
+	padding-right: 5vw;
+	margin-top: 65vh;
+	background-color: white;
+}
+.rewievscs1{
+		padding-right: 5vw;
+	font-family: Montserrat;
+	font-size: 4.7vw;
 	text-shadow: 7px -5px 0px rgba(0, 0, 0, 0.7);
+	margin-top: 55vh;
 }
 .rewievend{
 	width: 100%;
@@ -1196,22 +1244,175 @@ transform: skew(20deg 20deg);
 	height: 1vh;
 
 }
-.carousel-indicators:hover{
-	/*opacity: 0;*/
-}
 .rate3{
 	letter-spacing: 1vw;
 	bottom: 0!important;
 	color: gold;
 }
-.footerr1{
-	width: 100vw;
+.foterr1{
+	width: 100%;
 	height: 60vh;
-	background-color: #333;
+	background-color: #2c3e50;
+	transform: translateY(25vh);
+	padding: 4vw;
 }
-.footerr1 body{
-	background-color: #333;
+.foterr1d{
+	width: 100vw;
+	height: 61.5vh;
+	background-color: #2c3e50;
+	padding: 4vw;
 }
+.socialm{
+	text-align: center;
+}
+.socialdiv:hover{
+	transform: rotate(360deg);
+	transform: rotate3d(50%);
+}
+.sdivm{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.icons {
+  text-align: center;
+  display: flex;
+}
+.icons .social-icon {
+  text-decoration: none;
+  color: white;
+  display: inline-block!important;
+  font-size: 2.3vw;
+  width: 4.026354319180088vw;
+  height: 4.026354319180088vw;
+  line-height: 4.026354319180088vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0.7320644216691069vw;
+ transition: .2s;
+}
+.icons .social-icon:hover{
+	text-shadow: none!important;
+	 font-size: 2.6vw;
+}
+.social-icon1 {
+  text-decoration: none;
+  color: white;
+  display: inline-block!important;
+  font-size: 2.9282576866764276vw;
+  width: 2.9282576866764276vw;
+  height: 2.9282576866764276vw;
+  line-height: 2.9282576866764276vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0.5124450951683748vw;
+ transition: .2s;
+}
+.icons .twitter {
+  background: #55acee;
+  text-shadow: 0px 0px #2795e9, 1px 1px #2795e9, 2px 2px #2795e9, 3px 3px #2795e9, 4px 4px #2795e9, 5px 5px #2795e9, 6px 6px #2795e9, 7px 7px #2795e9, 8px 8px #2795e9, 9px 9px #2795e9, 10px 10px #2795e9, 11px 11px #2795e9, 12px 12px #2795e9, 13px 13px #2795e9, 14px 14px #2795e9, 15px 15px #2795e9, 16px 16px #2795e9, 17px 17px #2795e9, 18px 18px #2795e9, 19px 19px #2795e9, 20px 20px #2795e9, 21px 21px #2795e9, 22px 22px #2795e9, 23px 23px #2795e9, 24px 24px #2795e9, 25px 25px #2795e9, 26px 26px #2795e9, 27px 27px #2795e9, 28px 28px #2795e9, 29px 29px #2795e9, 30px 30px #2795e9, 31px 31px #2795e9, 32px 32px #2795e9, 33px 33px #2795e9, 34px 34px #2795e9, 35px 35px #2795e9;
+}
+.icons .facebook {
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ 
+  text-shadow: 0px 0px rgba(220, 39, 67, 0.7), 1px 1px rgba(220, 39, 67, 0.7), 2px 2px rgba(220, 39, 67, 0.7), 3px 3px rgba(220, 39, 67, 0.7), 4px 4px rgba(220, 39, 67, 0.7), 5px 5px rgba(220, 39, 67, 0.7), 6px 6px rgba(220, 39, 67, 0.7), 7px 7px rgba(220, 39, 67, 0.7), 8px 8px rgba(220, 39, 67, 0.7), 9px 9px rgba(220, 39, 67, 0.7), 10px 10px rgba(220, 39, 67, 0.7), 11px 11px rgba(220, 39, 67, 0.7), 12px 12px rgba(220, 39, 67, 0.7), 13px 13px rgba(220, 39, 67, 0.7), 14px 14px rgba(220, 39, 67, 0.7), 15px 15px rgba(220, 39, 67, 0.7), 16px 16px rgba(220, 39, 67, 0.7), 17px 17px rgba(220, 39, 67, 0.7), 18px 18px rgba(220, 39, 67, 0.7), 19px 19px rgba(220, 39, 67, 0.7), 20px 20px rgba(220, 39, 67, 0.7), 21px 21px rgba(220, 39, 67, 0.7), 22px 22px rgba(220, 39, 67, 0.7), 23px 23px rgba(220, 39, 67, 0.7), 24px 24px rgba(220, 39, 67, 0.7), 25px 25px rgba(220, 39, 67, 0.7), 26px 26px rgba(220, 39, 67, 0.7), 27px 27px rgba(220, 39, 67, 0.7), 28px 28px rgba(220, 39, 67, 0.7), 29px 29px rgba(220, 39, 67, 0.7), 30px 30px rgba(220, 39, 67, 0.7), 31px 31px rgba(220, 39, 67, 0.7), 32px 32px rgba(220, 39, 67, 0.7), 33px 33px rgba(220, 39, 67, 0.7), 34px 34px rgba(220, 39, 67, 0.7), 35px 35px rgba(220, 39, 67, 0.7);
+}
+.icons .stumbleupon {
+  background: #0088cc;
+  text-shadow: 0px 0px #0279b5, 1px 1px #0279b5, 2px 2px #0279b5, 3px 3px #0279b5, 4px 4px #0279b5, 5px 5px #0279b5, 6px 6px #0279b5, 7px 7px #0279b5, 8px 8px #0279b5, 9px 9px #0279b5, 10px 10px #0279b5, 11px 11px #0279b5, 12px 12px #0279b5, 13px 13px #0279b5, 14px 14px #0279b5, 15px 15px #0279b5, 16px 16px #0279b5, 17px 17px #0279b5, 18px 18px #0279b5, 19px 19px #0279b5, 20px 20px #0279b5, 21px 21px #0279b5, 22px 22px #0279b5, 23px 23px #0279b5, 24px 24px #0279b5, 25px 25px #0279b5, 26px 26px #0279b5, 27px 27px #0279b5, 28px 28px #0279b5, 29px 29px #0279b5, 30px 30px #0279b5, 31px 31px #0279b5, 32px 32px #0279b5, 33px 33px #0279b5, 34px 34px #0279b5, 35px 35px #0279b5;
+}
+.icons .google-plus {
+   background: #3b5998;
+  text-shadow: 0px 0px #2d4373, 1px 1px #2d4373, 2px 2px #2d4373, 3px 3px #2d4373, 4px 4px #2d4373, 5px 5px #2d4373, 6px 6px #2d4373, 7px 7px #2d4373, 8px 8px #2d4373, 9px 9px #2d4373, 10px 10px #2d4373, 11px 11px #2d4373, 12px 12px #2d4373, 13px 13px #2d4373, 14px 14px #2d4373, 15px 15px #2d4373, 16px 16px #2d4373, 17px 17px #2d4373, 18px 18px #2d4373, 19px 19px #2d4373, 20px 20px #2d4373, 21px 21px #2d4373, 22px 22px #2d4373, 23px 23px #2d4373, 24px 24px #2d4373, 25px 25px #2d4373, 26px 26px #2d4373, 27px 27px #2d4373, 28px 28px #2d4373, 29px 29px #2d4373, 30px 30px #2d4373, 31px 31px #2d4373, 32px 32px #2d4373, 33px 33px #2d4373, 34px 34px #2d4373, 35px 35px #2d4373;
+}
+.hrbot{
+	width: 55vw;
+	margin-top: 5vh;
+	background-color: #293a4a;
+}
+.menusectionn{
+		display: block;
+		width: 100vw!important;
+		transform: translateY(-126vh);
+		background: rgba(255,255,255, 0.18);
+	}
+	.menuull{
+		display: flex;
+		position: relative;
+		width: auto;
+		margin: 0 auto;
+		padding: 0 auto;
+	}
+	.menulii{
+		list-style: none;
+		position: relative;
+		text-decoration: none;
+		font-size: 1.9vw;
+		margin: 3vw;
+		width: 6.5vw;
+		text-align: center;
+		transform: translateX(10.25vw);
+		transition: .5s;
+		color: #333;
+	}
+	.menulii:hover{
+		text-shadow: 3px -3px 0px rgba(0, 0, 0, 0.3);
+	}
+	.menulii1{
+		list-style: none;
+		position: relative;
+		text-decoration: none;
+		font-size: 1.7vw;
+		border-style: solid;
+		margin: 3vw;
+		width: 13.5vw;
+		text-align: center;
+		transition: 1s;
+		color: #333;
+	}
+	.menulii1:hover{
+		background: #333;
+		color: #fff!important;
+		border-color: #333;
+	}
+	.menulii1:hover .menuu1a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.menuu1a{
+		color: #333;
+	}
+	.menuu1a:hover{
+		text-decoration: none;
+		color: #333;
+	}
+	.butt-go{
+		border-style: solid;
+		border-width: 1px;
+		border-color: #2c3e50;
+		justify-content: center;
+		align-items: center;
+		width: 9vw;
+		height: 5vh;
+		font-size: 14pt;
+		font-family: Montserrat;
+		text-align: center;
+		color: #333;
+
+	}
+	.modal-footer{
+		justify-content: center!important;
+	}
+	.close{
+		font-size: 2.5vw;
+		color: maroon;
+	}
 </style>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
@@ -1239,19 +1440,37 @@ transform: skew(20deg 20deg);
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12 ll2">
-						<a href="tel:+998712741630" class="fa fa-phone phtel hidden-xs"> </a>
+						<a href="tel:+998712741630" class="glyphicon glyphicon-phone-alt phtel hidden-xs"> </a>
 						<span style="color: #333; font-size: 2pt;">A</span>
 						<a href="tel:+998712741630" class="hidden-xs tel">+998 71 247 16 30</a>
 						<span style="color: #333; font-size: 10pt">lorem</span>
 						<a href="#" class="fa fa-map-marker location hidden-xs"> </a>
 						<span style="color: #333; font-size: 2pt;">A</span>
-						<a href="https://goo.gl/maps/L3unbmyzrpCVJeTs5" class="hidden-xs location1">DIRECTION</a>
-							<khan class="lll">
+						<a href="https://goo.gl/maps/L3unbmyzrpCVJeTs5" type="button" class="hidden-xs location1" data-toggle="modal" data-target="#exampleModal">
+  DIRECTION
+</a>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Waiting for your permission</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+   
+      <div class="modal-footer">
+        <a href="https://goo.gl/maps/L3unbmyzrpCVJeTs5" class="butt-go"><i class="fab fa-google"></i> Maps</a>
+      </div>
+    </div>
+  </div>
+</div>
+							<khan class="lll animate__animated animate__bounceInLeft">
 								<span class="langu hidden-xs"> FOLLOW US </span>
-								<span style="color: #333; font-size: 5pt;">lorem</span>
-								<a href="https://www.instagram.com/farhod.restaurant/" class="fa fa-instagram lang1"></a>
+								<span style="color: #333; font-size: 5pt;">lorem</span>								
 								<a href="#" class="fa fa-telegram lang1"></a>
-								<a href="#" class="fa fa-facebook lang1"></a>
+								<a href="https://www.instagram.com/farhod.restaurant/" class="fa fa-instagram lang1"></a>
+								<a href="#" class="fab fa-facebook lang1"></a>
 								<span style="color: #333; font-size: 8pt;">lorem</span>
 								<a href="#" class="lang">UZ  </a>
 								<span class="lang"> | </span>
@@ -1327,29 +1546,16 @@ transform: skew(20deg 20deg);
 	</div>
 </div>
 <div class="hidden-xs">
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar1">
-		
-  			<div class="bookd1 btndd animate__animated animate__flipInX animate__delay-2s">
-						
-			 		<a href="#" class="booka1"> BOOK NOW </a>
-			 			
-			</div>
-		
-  	<ul class="navbar-nav">
-		<li class="nav-item nav-item1">
-        	<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#main">Menu</a>
-      	</li>
-      		<li class="nav-item nav-item1">
-        		<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#section2">Gallery</a>
-      		</li>
-      			<li class="nav-item nav-item1">
-        			<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#">About</a>
-      			</li>
-      				<li class="nav-item nav-item1">
-        				<a class="nav-link navv1 animate__animated animate__fadeInUp animate__delay-1s" href="#">Contacts</a>
-      				</li>
-  	</ul>
-</nav>
+<section class="menusectionn">
+			<ul class="menuull">
+					<li class="menulii1 animate__animated animate__flipInX animate__slow"><a class="menuu1a" href="##">BOOK NOW</a></li>
+				<li class="menulii"><a class="menuu1a animate__animated animate__fadeInUp" href="###">Home</a></li>
+				<li class="menulii"><a class="menuu1a animate__animated animate__fadeInUp" href="###">Gallery</a></li>
+				<li class="menulii"><a class="menuu1a animate__animated animate__fadeInUp" href="###">Blog</a></li>
+				<li class="menulii"><a class="menuu1a animate__animated animate__fadeInUp" href="###">About</a></li>
+				<li class="menulii"><a class="menuu1a animate__animated animate__fadeInUp" href="###">Contacts</a></li>
+			</ul>
+		</section>
 </div>
 <div class="visible-xs-inline-block">
 	
@@ -1409,22 +1615,21 @@ transform: skew(20deg 20deg);
 						  	</div>
 						  </div>  
 					</div> -->
+
 					<div class="demo coursemeal">
 					
         <!-- APPETIZERS-->
         <div class="coursemeal__div nth33">
             <picture class="responsive-img nth33">
-                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/jSTZmp8H/appetizer-img-3.jpg">
-                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/1RTdCYhB/appetizer-img-2.jpg">
-                <source srcset="https://i.postimg.cc/TwnctQr7/appetizer-img-7.jpg">
-                <img src="https://i.postimg.cc/jSTZmp8H/appetizer-img-1.jpg" alt="Appetizer" >
+                <source media="(min-width: 992px)" srcset="https://source.unsplash.com/620x808">
+                <source media="(min-width: 767px)" srcset="https://source.unsplash.com/620x808">
+                <source srcset="https://source.unsplash.com/620x808">
+                <img src="https://source.unsplash.com/620x808" alt="Appetizer" >
             </picture>     
             
             <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Menu Silver <br>
-                <span class="uparroww">
-                <p class="animate__animated animate__bounce animate__infinite animate__slow"> <i class="glyphicon glyphicon-menu-up"></i> </p>
-                </span>
+                <a href="##" class="coursemeal-info__link">Menu Silver <br>
+                <p class="uparroww animate__animated animate__bounce animate__infinite animate__slow"> <i class="glyphicon glyphicon-menu-up"></i> </p>
                 </a>
                 <span class="mspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque laudantium voluptatum nemo blanditiis, modi expedita fugit pariatur dolorem tenetur ratione ab culpa ex assumenda possimus aliquam, tempore, debitis, magnam architecto.</span>
                 <br>
@@ -1436,17 +1641,15 @@ transform: skew(20deg 20deg);
         <div class="coursemeal__div">
             
             <picture class="responsive-img">
-                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/V6NCCRK0/maindish-img-1.jpg">
-                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/9XYj186s/maindish-img-2.jpg">
-                <source srcset="https://i.postimg.cc/pLY8dt4q/maindish-img-3.jpg">
-                <img src="https://i.postimg.cc/V6NCCRK0/maindish-img-1.jpg" alt="Main Course" >
+                <source media="(min-width: 992px)" srcset="https://source.unsplash.com/620x806">
+                <source media="(min-width: 767px)" srcset="https://source.unsplash.com/620x806">
+                <source srcset="https://source.unsplash.com/620x806">
+                <img src="https://source.unsplash.com/620x806" alt="Main Course" >
             </picture> 
 
             <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link">Menu Gold <br>
-                <span class="uparroww">
-                <p class="animate__animated animate__bounce animate__infinite animate__slow"><i class="glyphicon glyphicon-menu-up"></i></p>
-                </span>
+                <a href="##" class="coursemeal-info__link">Menu Gold <br>
+                <p class="uparroww animate__animated animate__bounce animate__infinite animate__slow"> <i class="glyphicon glyphicon-menu-up"></i> </p>
                 </a>
                 
                 <span class="mspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque laudantium voluptatum nemo blanditiis, modi expedita fugit pariatur dolorem tenetur ratione ab culpa ex assumenda possimus aliquam, tempore, debitis, magnam architecto.</span>
@@ -1458,17 +1661,15 @@ transform: skew(20deg 20deg);
         <!-- DESSERTS-->
         <div class="coursemeal__div nth3">
             <picture class="responsive-img nth3">
-                <source media="(min-width: 992px)" srcset="https://i.postimg.cc/9FfLh6ZZ/dessert-img-1.jpg">
-                <source media="(min-width: 767px)" srcset="https://i.postimg.cc/FsRXBnKn/dessert-img-2.jpg">
-                <source srcset="https://i.postimg.cc/ZKcFCVFZ/dessert-img-3.jpg">
-                <img src="https://i.postimg.cc/ZKcFCVFZ/dessert-img-1.jpg" alt="Desserts">
+                <source media="(min-width: 992px)" srcset="https://source.unsplash.com/620x807">
+                <source media="(min-width: 767px)" srcset="https://source.unsplash.com/620x807">
+                <source srcset="https://source.unsplash.com/620x807">
+                <img src="https://source.unsplash.com/620x807" alt="Desserts">
             </picture>
 
             <div class="coursemeal-info">
-                <a href="#" class="coursemeal-info__link ">Menu Platinum <br>
-                <span class="uparroww">
-                <p class="animate__animated animate__bounce animate__infinite animate__slow"><i class="glyphicon glyphicon-menu-up"></i></p>
-                </span>
+                <a href="##" class="coursemeal-info__link ">Menu Platinum <br>
+                <p class="uparroww animate__animated animate__bounce animate__infinite animate__slow"> <i class="glyphicon glyphicon-menu-up"></i> </p>
                 </a>
                 <span class="mspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque laudantium voluptatum nemo blanditiis, modi expedita fugit pariatur dolorem tenetur ratione ab culpa ex assumenda possimus aliquam, tempore, debitis, magnam architecto.</span>
                 <br>
@@ -1476,7 +1677,117 @@ transform: skew(20deg 20deg);
             </div>              
         </div>
     </div>
+
+					<div class="blogishe">
+  <!-- partial:index.partial.html -->
+<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        
+        <img src="https://source.unsplash.com/650x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">9 April 2020</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
     </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/651x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div> 
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x651" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/652x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x652" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/653x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x653" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x654" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/654x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+  </div>
+  <div class="blog-slider__pagination"></div>
+</div>
+<!-- partial -->
+</div>
+    			</div>
 
 
 				<div class="visible-xs-inline-block">
@@ -1514,16 +1825,130 @@ transform: skew(20deg 20deg);
 						  	</div>
 						  </div> 
 					</div>
+
+
 				</div>
 				</div>	
     		</div>
 <div class="hidden-xs">
 <div class="cont2">
-
+<div class="rewievsc1">
+		<span class="rewievscs1">Blog</span>
+</div>
 </div>
 </div>
 <div class="visible-xs-inline-block">
 <div class="cont22">
+		<div style="text-align: right;"><span class="rewievscs1">Blog</span></div>
+		<div class="blogishe">
+  <!-- partial:index.partial.html -->
+<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        
+        <img src="https://source.unsplash.com/650x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">9 April 2020</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/651x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div> 
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x651" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/652x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x652" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/653x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x653" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/650x654" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://source.unsplash.com/654x650" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+  </div>
+  <div class="blog-slider__pagination"></div>
+</div>
+<!-- partial -->
+</div>
 
 </div>
 </div>
@@ -1545,12 +1970,15 @@ transform: skew(20deg 20deg);
 			</div>
 		</div> -->
 		<br>
-		<div class="rewievsc">
+		<div class="rewievsc hidden-xs">
 			<span class="rewievscs">Rewievs</span>
 		</div>
 		<br>
 		<div class="visible-xs-inline-block">
-	<div class="complains1">
+	<div class="complains11">
+	
+</div>
+<div class="complains1">
 	<div class="complll12 compl12">
 		<div class="pic1">
 			<!-- <img src="img/face8.jpg" alt=""> -->
@@ -1627,7 +2055,7 @@ transform: skew(20deg 20deg);
 <div class="rewievend">
 	
 </div>
-  
+
 <div class="hidden-xs">
 	<div id="carouselExampleIndicators" class="carousel carousel1 slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -1724,10 +2152,38 @@ transform: skew(20deg 20deg);
   </div>
 </div>
 </div>
-
-<div class="footerr1">
-	
+	<div class="hidden-xs">
+		<div class="foterr1">
+			<div class="socialm">
+				<div class="sdivm">
+					<div class="icons">  
+  <a target="_blank" href="" class="fab fa-twitter twitter social-icon"></a>
+  <a target="_blank" href="" class="fab fa-instagram facebook social-icon"></a>
+  <a target="_blank" href="" class="fab fa-telegram stumbleupon social-icon"></a>
+  <a target="_blank" href="" class="fab fa-facebook google-plus social-icon"></a>
 </div>
+
+				</div>
+			</div>
+			<hr class="hrbot">
+			<span>Copyright © 2020 <a href="##"> LifeEditor group. </a> All rights reserved.</span>
+		</div>
+	</div>
+	<div class="visible-xs">
+		<div class="foterr1d">
+			<div class="socialm">
+				<div class="sdivm">
+					<div class="icons">  
+  <a target="_blank" href="" class="fab fa-twitter twitter social-icon1"></a>
+  <a target="_blank" href="" class="fab fa-instagram facebook social-icon1"></a>
+  <a target="_blank" href="" class="fab fa-telegram stumbleupon social-icon1"></a>
+  <a target="_blank" href="" class="fab fa-facebook google-plus social-icon1"></a>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -1735,7 +2191,8 @@ transform: skew(20deg 20deg);
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="js/scriptblog.js"></script>
 </body>
 </html>
 <!-- background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%); -->
