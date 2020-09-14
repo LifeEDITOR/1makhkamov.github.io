@@ -1,12 +1,5 @@
 
-.ff{
-	min-width:100%;
-	min-height:100%;
-	display:block;
-	position:relative;
-	transform: translateY(-103vh)!important;
 
-	}
 
 .menu{
 	width:1cm;
@@ -30,7 +23,7 @@
 	z-index:-1;
 	transition:all .75s ease;
 
-	transform: translateX(-5vw);
+	transform: translateX(-19px);
 	}
 
 .list{
@@ -64,8 +57,7 @@
 	background:#333;
 	width:45px;
 	height:45px;
-	/*margin-top: 0;*/
-	top: 1.5%;
+	top: 10px;
 	left:0.4cm;
 	display:flex;
 	position:absolute;
@@ -78,8 +70,7 @@
 	.btndd{
 	background:#333;
 
-	/*margin-top: 0;*/
-	top: 1.5%;
+	top: 10px;
 	left:0.4cm;
 	display:block;
 	position:absolute;
@@ -108,3 +99,27 @@
 .menu:focus-within .intro{width:calc(100% - 120px);left:0px; top: -200px;}
 .menu:focus-within .btn:before{transform:rotate(360deg) translate(2px,2px)}
 .menu:focus-within .btn:after{transform:rotate(-360deg) translate(2px,-2px)}
+
+@media screen and (orientation:portrait) {
+/* Style adjustments for portrait mode goes here */
+.ff{
+	min-width:100%;
+	min-height:100%;
+	display:block;
+	position:relative;
+	transform: translateY(-103vh)!important;
+
+	}
+}
+
+@media screen and (orientation:landscape) {
+  /* Style adjustments for landscape mode goes here */
+  .ff{
+	min-width:100%;
+	min-height:100%;
+	display:block;
+	position:relative;
+	transform: translateY(-121vh)!important;
+
+	}
+}
