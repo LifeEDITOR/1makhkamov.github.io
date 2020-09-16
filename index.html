@@ -173,7 +173,6 @@ a:hover{
 .one{
 	background-image: url(https://source.unsplash.com/1000x800);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	height: 95vh!important;
 	width: 100%;
 	opacity: 0.78;
@@ -181,25 +180,62 @@ a:hover{
 	background-color: #fff;
 
 }
+.one:before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  opacity: 0.78;
+  z-index: -10;
+  background-color: #fff;
+  background: url(https://source.unsplash.com/1000x800) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .two{
 	background-image: url(https://source.unsplash.com/1000x802);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	height: 95vh!important;
 	width: 100%;
 	opacity: 0.78;
 	background-position: center;
 	background-color: #fff;
 }
+.two:before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  opacity: 0.78;
+  z-index: -10;
+  background-color: #fff;
+  background: url(https://source.unsplash.com/1000x802) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .three{
-	background-image: url(https://source.unsplash.com/1000x806);
+	background-image: url(https://source.unsplash.com/1000x803);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	height: 95vh!important;
 	width: 100%;
 	opacity: 0.78;
 	background-position: center;
 	background-color: #fff;
+}
+.three:before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  opacity: 0.78;
+  z-index: -10;
+  background-color: #fff;
+  background: url(https://source.unsplash.com/1000x803) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 section {
   /*height: 100vh;*/
